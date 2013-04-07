@@ -44,7 +44,7 @@
     //sends tweet with specified string
     
     
-    [[Manager sharedInstance] checkfortweet];
+   // [[Manager sharedInstance] checkfortweet];
     //parses a tweeted phonenumber and calls from iSchoolerz
     
     

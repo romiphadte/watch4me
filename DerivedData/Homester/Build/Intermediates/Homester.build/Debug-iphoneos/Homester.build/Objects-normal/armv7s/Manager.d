@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/siddhantdanger/Projects/App\ Stuff/watch4me/Homester/Homester/Manager.m \
+  /Users/siddhantdanger/Projects/App\ Stuff/watch4me/Homester/Homester/Manager.mm \
   /Users/siddhantdanger/Projects/App\ Stuff/watch4me/Homester/Homester/Manager.h \
   /Users/siddhantdanger/Projects/App\ Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/PocketsphinxController.h \
   /Users/siddhantdanger/Projects/App\ Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/OpenEarsEventsObserver.h \

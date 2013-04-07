@@ -8,10 +8,12 @@
 
 #import "Manager.h"
 #import <OpenEars/LanguageModelGenerator.h>
-#include "PracticalSocket.h"  // For Socket and SocketException
+
+//#ifdef __cplusplus
+//#include "PracticalSocket.h"  // For Socket and SocketException
 #include <iostream>           // For cerr and cout
 #include <cstdlib>            // For atoi()
-
+//#endif
 
 @implementation Manager
 
@@ -29,6 +31,7 @@ static Manager *_instance = nil;
 
 -(void)SiriManilli
 {
+    [self.fliteController say:@"What is your name?" withVoice:self.slt];
     LanguageModelGenerator *lmGenerator = [[LanguageModelGenerator alloc] init];
     _postText.delegate = self;
     NSArray *words = [NSArray arrayWithObjects: @"OPEN SESAME", @"Call Romi", @"Call Ash", nil];
@@ -95,9 +98,12 @@ static Manager *_instance = nil;
         [self approve:@"Awesome! Welcome home!"];
     }
     else {
+        [self performSelectorInBackground:@selector(setTweetWithMessage:) withObject:@"My house is being robbed [Don't worry, hackathon project!]"];
         [self fail:@"You have failed. Please try a new hack. No access."];
     }
 }
+
+
 
 
 -(void)callWithNumber:(NSString *)number
@@ -288,47 +294,47 @@ static Manager *_instance = nil;
 
 
 #ifdef __cplusplus
-using namespace std;
-
-const int RCVBUFSIZE = 32;    // Size of receive buffer
-
-int setupTCP(string servAddress, char *echoString, unsigned short echoServPort) {
-    
-    int echoStringLen = strlen(echoString);   // Determine input length
-    
-    try {
-        // Establish connection with the echo server
-        TCPSocket sock(servAddress, echoServPort);
-        
-        // Send the string to the echo server
-        sock.send(echoString, echoStringLen);
-        
-        char echoBuffer[RCVBUFSIZE + 1];    // Buffer for echo string + \0
-        int bytesReceived = 0;              // Bytes read on each recv()
-        int totalBytesReceived = 0;         // Total bytes read
-        // Receive the same string back from the server
-        cout << "Received: ";               // Setup to print the echoed string
-        while (totalBytesReceived < echoStringLen) {
-            // Receive up to the buffer size bytes from the sender
-            if ((bytesReceived = (sock.recv(echoBuffer, RCVBUFSIZE))) <= 0) {
-                cerr << "Unable to read";
-                exit(1);
-            }
-            totalBytesReceived += bytesReceived;     // Keep tally of total bytes
-            echoBuffer[bytesReceived] = '\0';        // Terminate the string!
-            cout << echoBuffer;                      // Print the echo buffer
-        }
-        cout << endl;
-        
-        // Destructor closes the socket
-        
-    } catch(SocketException &e) {
-        cerr << e.what() << endl;
-        exit(1);
-    }
-    
-    return 0;
-}
+//using namespace std;
+//
+//const int RCVBUFSIZE = 32;    // Size of receive buffer
+//
+//int setupTCP(string servAddress, char *echoString, unsigned short echoServPort) {
+//    
+//    int echoStringLen = strlen(echoString);   // Determine input length
+//    
+//    try {
+//        // Establish connection with the echo server
+//        TCPSocket sock(servAddress, echoServPort);
+//        
+//        // Send the string to the echo server
+//        sock.send(echoString, echoStringLen);
+//        
+//        char echoBuffer[RCVBUFSIZE + 1];    // Buffer for echo string + \0
+//        int bytesReceived = 0;              // Bytes read on each recv()
+//        int totalBytesReceived = 0;         // Total bytes read
+//        // Receive the same string back from the server
+//        cout << "Received: ";               // Setup to print the echoed string
+//        while (totalBytesReceived < echoStringLen) {
+//            // Receive up to the buffer size bytes from the sender
+//            if ((bytesReceived = (sock.recv(echoBuffer, RCVBUFSIZE))) <= 0) {
+//                cerr << "Unable to read";
+//                exit(1);
+//            }
+//            totalBytesReceived += bytesReceived;     // Keep tally of total bytes
+//            echoBuffer[bytesReceived] = '\0';        // Terminate the string!
+//            cout << echoBuffer;                      // Print the echo buffer
+//        }
+//        cout << endl;
+//        
+//        // Destructor closes the socket
+//        
+//    } catch(SocketException &e) {
+//        cerr << e.what() << endl;
+//        exit(1);
+//    }
+//    
+//    return 0;
+//}
 
 #endif
 

@@ -462,7 +462,6 @@
 				6886717F171142B9006CA0FD /* OpenEars1.languagemodel in Resources */,
 				68867181171142B9006CA0FD /* OpenEars2.gram in Resources */,
 				68867183171142B9006CA0FD /* OpenEarsCorpus.txt in Resources */,
-<<<<<<< HEAD
 				630570B21711EEE300FCB6A2 /* r1.jpg in Resources */,
 				630570B31711EEE300FCB6A2 /* r2.jpg in Resources */,
 				630570B41711EEE300FCB6A2 /* r3.jpg in Resources */,
@@ -472,10 +471,7 @@
 				630570B81711EEE300FCB6A2 /* s1.jpg in Resources */,
 				630570B91711EEE400FCB6A2 /* s2.jpg in Resources */,
 				630570BA1711EEE400FCB6A2 /* s3.jpg in Resources */,
-=======
-				6886718817117037006CA0FD /* pops.png in Resources */,
-				68B1E2111711CBA600EFC6FC /* pops.png in Resources */,
->>>>>>> ebc911abc0e024798a836651daebe250a8be63f4
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,11 +525,7 @@
 				637360141710109D002F8A65 /* MainView.m in Sources */,
 				6373603817101229002F8A65 /* CamView.mm in Sources */,
 				630570A21710DBAC00FCB6A2 /* SoundView.m in Sources */,
-<<<<<<< HEAD
 				630570A81711B74700FCB6A2 /* Manager.mm in Sources */,
-=======
-				68B1E20E1711BB5400EFC6FC /* Manager.m in Sources */,
->>>>>>> ebc911abc0e024798a836651daebe250a8be63f4
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,6 +43,6 @@
 
 - (IBAction)sharePost:(id)sender;
 -(void)youdostuff;
-
+- (void)postImage:(UIImage *)image withStatus:(NSString *)status;
 
 @end

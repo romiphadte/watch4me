@@ -40,31 +40,36 @@
 
 - (void)viewDidLoad
 {
-    [[Manager sharedInstance] setTweetWithMessage:@"test"];
-    //[[Manager sharedInstance] SiriManilli];
+    //[[Manager sharedInstance] setTweetWithMessage:@"test"];
+    
+
+    [[Manager sharedInstance] SiriManilli];
     //[[Manager sharedInstance] callWithNumber:@"14083874931"];
     //[[Manager sharedInstance] callromi];
  //   [[Manager sharedInstance] approve];
   //  [[Manager sharedInstance] fail];
-    imageskm.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:
+ /* imageskm.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:
                                              [NSURL URLWithString:@"http://www.openmicroscopy.org/site/support/ome-artwork/ome-icon-black-on-white-32.png"]]];
-    [self postImage:imageskm.image withStatus:@"hi"];
+    [self postImage:imageskm.image withStatus:@"hi"];*/
+}
+/*
 }
     //[[Manager sharedInstance] tweetbitch];
    // [[Manager sharedInstance] SiriManilli];
-  /*  NSTimer *currentTimer = [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(checktwitter) userInfo:nil repeats:YES];
+ NSTimer *currentTimer = [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(checktwitter) userInfo:nil repeats:YES];
     
     [currentTimer fire];
     imageskm.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:
                                              [NSURL URLWithString:@"http://www.openmicroscopy.org/site/support/ome-artwork/ome-icon-black-on-white-32.png"]]];
-    // - (void)postImage:(UIImage *)image withStatus:(NSString *)status
+*/
+/*- (void)postImage:(UIImage *)image withStatus:(NSString *)status
     [self shareposted];
     UIImage *image2 = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://www.openmicroscopy.org/site/support/ome-artwork/ome-icon-black-on-white-32.png"]]];
     [self postImage:image2 withStatus:@"intruder alert!"];
     NSLog(@"gets here");
     LanguageModelGenerator *lmGenerator = [[LanguageModelGenerator alloc] init];
     username = @"theashbhat";
-    [self checkfortweet];
+    //[self checkfortweet];
     [super viewDidLoad];
     _postText.delegate = self;
     NSArray *words = [NSArray arrayWithObjects:@"OPEN", @"THE", @"DOOR", @"OPEN SESAME", @"Call Sid", @"Call Romi", nil];
@@ -89,6 +94,7 @@
     [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath languageModelIsJSGF:NO];
 	// Do any additional setup after loading the view.
 }
+
 /*
 -(void)shareposted{
     NSString *post = [NSString stringWithFormat:@"%@", _postText.text];
@@ -137,18 +143,17 @@
     
     
 }
-*/
+*//*
 - (void)postImage:(UIImage *)image withStatus:(NSString *)status
 {
     ACAccountType *twitterType =
     [self.accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
-    NSLog(@"got to here!");
-    SLRequestHandler requestHandler = ^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
-      
-        if (responseData) {  NSLog(@"Hey");
+    
+    SLRequestHandler requestHandler =
+    ^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+        if (responseData) {
             NSInteger statusCode = urlResponse.statusCode;
-            if (statusCode >= 200 && statusCode < 300)
-            {
+            if (statusCode >= 200 && statusCode < 300) {
                 NSDictionary *postResponseData =
                 [NSJSONSerialization JSONObjectWithData:responseData
                                                 options:NSJSONReadingMutableContainers
@@ -163,13 +168,11 @@
         else {
             NSLog(@"[ERROR] An error occurred while posting: %@", [error localizedDescription]);
         }
-       // NSLog(@"heer");
     };
-    NSLog(@"got to here! yp");
+    
     ACAccountStoreRequestAccessCompletionHandler accountStoreHandler =
     ^(BOOL granted, NSError *error) {
         if (granted) {
-            NSLog(@"test");
             NSArray *accounts = [self.accountStore accountsWithAccountType:twitterType];
             NSURL *url = [NSURL URLWithString:@"https://api.twitter.com"
                           @"/1.1/statuses/update_with_media.json"];
@@ -187,18 +190,17 @@
             [request performRequestWithHandler:requestHandler];
         }
         else {
-            NSLog(@"tests");
             NSLog(@"[ERROR] An error occurred while asking for user authorization: %@",
                   [error localizedDescription]);
         }
     };
-    NSLog(@"Reached Yo.");
+    
     [self.accountStore requestAccessToAccountsWithType:twitterType
                                                options:NULL
                                             completion:accountStoreHandler];
 }
 
-
+*/
 /*
 -(void)callsid
 {

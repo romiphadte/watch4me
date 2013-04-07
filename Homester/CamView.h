@@ -18,7 +18,7 @@ using namespace std;
     Mat *_meanImage, *_stdDevImage, *_backgroundImage, *_positiveImage, *_testImage;
     Point2f *_oldContourCOM;
     BOOL _doneMoving, _isMoving;
-    int _frameCount;
+    int _frameCount, _onCount, _downTimeCount;
 }
 
 @property (nonatomic, retain) IBOutlet UIImageView *_imageview;

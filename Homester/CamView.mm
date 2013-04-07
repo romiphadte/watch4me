@@ -40,7 +40,7 @@
     //set up variables
     _oldContourCOM = new Point2f();
     _doneMoving = _isMoving = NO;
-    _frameCount = 0;
+    _frameCount = _onCount = _downTimeCount = 0;
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -98,7 +98,6 @@
     
     //if there's a contour found then grab COM of largest contour
     if(allCountours.size() > 0 && _frameCount > 20){
-        
         int indexGrestest = greatestContourArea(allCountours.size(), allCountours);
         vector<cv::Point> lContour = allCountours[indexGrestest];
         if(contourArea(lContour) > 1000 && contourArea(lContour) < 100000){
@@ -121,12 +120,12 @@
             //confirm valid moving target
             if(dist > 5 && dist < 20){
                 _isMoving = YES;
-            } else{ //if nothing is moving, check if something WAS moving
-                cout << dist << endl;
-                if (_isMoving) {
-                    _doneMoving = YES;
-                    _isMoving = NO;
-                }
+                _onCount++;
+                _downTimeCount = 0;
+            }
+            
+            if(_onCount > 30 * FPS){
+                cout << "SUSPICIOUS ACTIVITY DETECTED" << endl;
             }
             
             /*if something is done moving ie: someone standing in front of camera, make
@@ -141,7 +140,7 @@
                 //find current foreground
                 subtractFeatures(*_backgroundImage, _testImage, 10);
                 _testImage->copyTo(origImage);
-                cout << "done moving" << endl;
+              //  cout << "done moving1" << endl;
                 //find ROI
                 //   const char* cascade_name =
                 //   "haarcascade_frontalface_alt.xml";
@@ -150,13 +149,29 @@
                 
                 _doneMoving = NO;
             }
+        } else{ //  cout << dist << endl;
+            if (_isMoving) {
+                cout << "done moving" << endl;
+                _doneMoving = YES;
+                _isMoving = NO;
+            }
+            
+            if(_downTimeCount < 3 * FPS){
+                _onCount++;
+            }else if(_downTimeCount > 3 * FPS){
+                _onCount = 0;
+            }
+            
+            _downTimeCount++;
+            if(_downTimeCount == 10000)
+                _downTimeCount = 4 * FPS;
         }
-    } else{ //else update background of background image
+    } else { //else update background of background image
         origImage.copyTo(*_backgroundImage);
     }
     
-    //  origImage.convertTo(origImage, CV_8UC1);
-    //  image.copyTo(origImage);
+      origImage.convertTo(origImage, CV_8UC1);
+      image.copyTo(origImage);
     
     _frameCount++;
     if(_frameCount == 10000)

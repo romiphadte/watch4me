@@ -67,6 +67,11 @@
 		68867184171142B9006CA0FD /* OpenEarsCorpus.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68867167171142B9006CA0FD /* OpenEarsCorpus.txt */; };
 		68867185171142B9006CA0FD /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68867168171142B9006CA0FD /* Slt.framework */; };
 		68867186171142B9006CA0FD /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68867168171142B9006CA0FD /* Slt.framework */; };
+		6886718817117037006CA0FD /* pops.png in Resources */ = {isa = PBXBuildFile; fileRef = 6886718717117037006CA0FD /* pops.png */; };
+		68B1E20E1711BB5400EFC6FC /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B1E20D1711BB5400EFC6FC /* Manager.m */; };
+		68B1E20F1711BB5400EFC6FC /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B1E20D1711BB5400EFC6FC /* Manager.m */; };
+		68B1E2111711CBA600EFC6FC /* pops.png in Resources */ = {isa = PBXBuildFile; fileRef = 68B1E2101711CBA600EFC6FC /* pops.png */; };
+		68B1E2121711CBA600EFC6FC /* pops.png in Resources */ = {isa = PBXBuildFile; fileRef = 68B1E2101711CBA600EFC6FC /* pops.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +138,10 @@
 		68867166171142B9006CA0FD /* OpenEars2.gram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars2.gram; sourceTree = "<group>"; };
 		68867167171142B9006CA0FD /* OpenEarsCorpus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEarsCorpus.txt; sourceTree = "<group>"; };
 		68867168171142B9006CA0FD /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		6886718717117037006CA0FD /* pops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pops.png; sourceTree = "<group>"; };
+		68B1E20C1711BB5400EFC6FC /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
+		68B1E20D1711BB5400EFC6FC /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
+		68B1E2101711CBA600EFC6FC /* pops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pops.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +187,7 @@
 		63735FEB1710109B002F8A65 = {
 			isa = PBXGroup;
 			children = (
+				6886718717117037006CA0FD /* pops.png */,
 				68867153171141D0006CA0FD /* AudioToolbox.framework */,
 				6373604917101678002F8A65 /* libc++.dylib */,
 				63735FFD1710109B002F8A65 /* Homester */,
@@ -271,6 +281,7 @@
 				637360131710109D002F8A65 /* MainView.m */,
 				6373603617101229002F8A65 /* CamView.h */,
 				6373603717101229002F8A65 /* CamView.mm */,
+				68B1E2101711CBA600EFC6FC /* pops.png */,
 				630570A01710DBAC00FCB6A2 /* SoundView.h */,
 				630570A11710DBAC00FCB6A2 /* SoundView.m */,
 			);
@@ -289,6 +300,8 @@
 		6373603417101105002F8A65 /* MyClasses */ = {
 			isa = PBXGroup;
 			children = (
+				68B1E20C1711BB5400EFC6FC /* Manager.h */,
+				68B1E20D1711BB5400EFC6FC /* Manager.m */,
 			);
 			name = MyClasses;
 			sourceTree = "<group>";
@@ -419,6 +432,8 @@
 				6886717F171142B9006CA0FD /* OpenEars1.languagemodel in Resources */,
 				68867181171142B9006CA0FD /* OpenEars2.gram in Resources */,
 				68867183171142B9006CA0FD /* OpenEarsCorpus.txt in Resources */,
+				6886718817117037006CA0FD /* pops.png in Resources */,
+				68B1E2111711CBA600EFC6FC /* pops.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +455,7 @@
 				68867180171142B9006CA0FD /* OpenEars1.languagemodel in Resources */,
 				68867182171142B9006CA0FD /* OpenEars2.gram in Resources */,
 				68867184171142B9006CA0FD /* OpenEarsCorpus.txt in Resources */,
+				68B1E2121711CBA600EFC6FC /* pops.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +487,7 @@
 				637360141710109D002F8A65 /* MainView.m in Sources */,
 				6373603817101229002F8A65 /* CamView.mm in Sources */,
 				630570A21710DBAC00FCB6A2 /* SoundView.m in Sources */,
+				68B1E20E1711BB5400EFC6FC /* Manager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				637360291710109D002F8A65 /* HomesterTests.m in Sources */,
+				68B1E20F1711BB5400EFC6FC /* Manager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

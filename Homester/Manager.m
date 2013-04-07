@@ -23,18 +23,21 @@ static Manager *_instance = nil;
     NSLog(@"Hi!");
 }
 
--(void)SiriManilli:(id)sender
+-(void)SiriManilli
 {
+    NSLog(@"0");
         LanguageModelGenerator *lmGenerator = [[LanguageModelGenerator alloc] init];
+    NSLog(@"1");
     NSArray *words = [NSArray arrayWithObjects:@"OPEN", @"THE", @"DOOR", @"OPEN SESAME", @"Call Sid", @"Call Romi", nil];
     NSString *name = @"Voice Recognition";
+    NSLog(@"2");
     NSError *err = [lmGenerator generateLanguageModelFromArray:words withFilesNamed:name];
-    
     NSDictionary *languageGeneratorResults = nil;
+    NSLog(@"3");
     [self.openEarsEventsObserver setDelegate:self];
     lmPath = nil;
     dicPath = nil;
-	
+	NSLog(@"4");
     if([err code] == noErr) {
         
         languageGeneratorResults = [err userInfo];
@@ -48,17 +51,17 @@ static Manager *_instance = nil;
     [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath languageModelIsJSGF:NO];
 }
 
--(void)callsid
+-(void)callWithNumber:(NSString *)number
 {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",@"14087755468"]]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",number]]];
 }
 
--(void)authorize
+-(void)approve
 {
     [self.fliteController say:@"Awesome! Welcome home. Opening door!" withVoice:self.slt];
 }
 
--(void)wrong
+-(void)fail
 {
     [self.fliteController say:@"Sorry wrong password bro. Try hacking something to get past me at the next hackathon." withVoice:self.slt];
 }
@@ -70,10 +73,9 @@ static Manager *_instance = nil;
 
 
 
--(void)tweetbitch
+-(void)setTweetWithMessage:(NSString *)message
 {
-    _postText.text = @"A burgular has broken in!";
-    NSString *post = [NSString stringWithFormat:@"%@", _postText.text];
+    NSString *post = [NSString stringWithFormat:@"%@", message];
     
     if (post.length >= 141) {
         NSLog(@"Tweet won't be sent.");

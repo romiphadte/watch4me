@@ -45,6 +45,10 @@
 -(void)sayHi;
 - (void)tweetbitch;
 - (void)SiriManilli;
+- (void)callWithNumber:(NSString *)number;
+- (void)callromi;
+- (void)approve;
+- (void)fail;
 +(Manager*)sharedInstance;
 
 @end

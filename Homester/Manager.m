@@ -56,14 +56,19 @@ static Manager *_instance = nil;
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",number]]];
 }
 
--(void)approve
+-(void)approve:(NSString *)approvetext
 {
-    [self.fliteController say:@"Awesome! Welcome home. Opening door!" withVoice:self.slt];
+    [self.fliteController say:approvetext withVoice:self.slt];
 }
 
--(void)fail
+-(void)fail:(NSString *)denytext
 {
-    [self.fliteController say:@"Sorry wrong password bro. Try hacking something to get past me at the next hackathon." withVoice:self.slt];
+    [self.fliteController say:denytext withVoice:self.slt];
+}
+
+-(void)socialParse
+{
+    
 }
 
 -(void)callromi
@@ -99,6 +104,8 @@ static Manager *_instance = nil;
                     
                     [twitterRequest performRequestWithHandler:^(NSData* responseData, NSHTTPURLResponse* urlResponse, NSError* error) {
                         NSLog(@"%@", [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
+                        
+                        NSTimer *currentTimer = [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(socialParse) userInfo:nil repeats:YES];
                         
                     }];
                     

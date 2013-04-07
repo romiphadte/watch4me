@@ -23,6 +23,16 @@
 @synthesize fliteController;
 @synthesize slt;
 
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        _accountStore = [[ACAccountStore alloc] init];
+    }
+    return self;
+}
+
 -(void)checktwitter
 {
     
@@ -30,12 +40,15 @@
 
 - (void)viewDidLoad
 {
-    [[Manager sharedInstance] tweetbitch];
-    [[Manager sharedInstance] SiriManilli];
-    [[Manager sharedInstance] callWithNumber:@"14083874931"];
-    [[Manager sharedInstance] callromi];
-    [[Manager sharedInstance] approve];
-    [[Manager sharedInstance] fail];
+    [[Manager sharedInstance] setTweetWithMessage:@"test"];
+    //[[Manager sharedInstance] SiriManilli];
+    //[[Manager sharedInstance] callWithNumber:@"14083874931"];
+    //[[Manager sharedInstance] callromi];
+ //   [[Manager sharedInstance] approve];
+  //  [[Manager sharedInstance] fail];
+    imageskm.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:
+                                             [NSURL URLWithString:@"http://www.openmicroscopy.org/site/support/ome-artwork/ome-icon-black-on-white-32.png"]]];
+    [self postImage:imageskm.image withStatus:@"hi"];
 }
     //[[Manager sharedInstance] tweetbitch];
    // [[Manager sharedInstance] SiriManilli];
@@ -124,15 +137,15 @@
     
     
 }
-
+*/
 - (void)postImage:(UIImage *)image withStatus:(NSString *)status
 {
     ACAccountType *twitterType =
     [self.accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
     NSLog(@"got to here!");
     SLRequestHandler requestHandler = ^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
-        NSLog(@"Hey");
-        if (responseData) {
+      
+        if (responseData) {  NSLog(@"Hey");
             NSInteger statusCode = urlResponse.statusCode;
             if (statusCode >= 200 && statusCode < 300)
             {
@@ -150,12 +163,13 @@
         else {
             NSLog(@"[ERROR] An error occurred while posting: %@", [error localizedDescription]);
         }
-        NSLog(@"heer");
+       // NSLog(@"heer");
     };
     NSLog(@"got to here! yp");
     ACAccountStoreRequestAccessCompletionHandler accountStoreHandler =
     ^(BOOL granted, NSError *error) {
         if (granted) {
+            NSLog(@"test");
             NSArray *accounts = [self.accountStore accountsWithAccountType:twitterType];
             NSURL *url = [NSURL URLWithString:@"https://api.twitter.com"
                           @"/1.1/statuses/update_with_media.json"];
@@ -173,18 +187,19 @@
             [request performRequestWithHandler:requestHandler];
         }
         else {
+            NSLog(@"tests");
             NSLog(@"[ERROR] An error occurred while asking for user authorization: %@",
                   [error localizedDescription]);
         }
     };
-    
+    NSLog(@"Reached Yo.");
     [self.accountStore requestAccessToAccountsWithType:twitterType
                                                options:NULL
                                             completion:accountStoreHandler];
 }
 
 
-
+/*
 -(void)callsid
 {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",@"14087755468"]]];

@@ -26,13 +26,17 @@
 }
 - (IBAction)checktweet:(id)sender {
     [self checkfortweet];
-    [self checkforphone];
+    [self checkforphone:parsednumber];
+}
+- (IBAction)check:(id)sender {
+    [self checkfortweet];
+    [self checkforphone:parsednumber];
 }
 
 -(void)youdostuff
 {
     [self checkfortweet];
-    [self checkforphone];
+    [self checkforphone:parsednumber];
 }
 -(void)checkfortweet
 {
@@ -88,7 +92,18 @@
                             
                             NSString *lastTweet = [[(NSDictionary *)TWData objectForKey:@"status"] objectForKey:@"text"];
                             lastTweetTextView.text= lastTweet;
-                            [self checkforphone];
+                            NSString *numberString;
+                            NSScanner *scanner = [NSScanner scannerWithString:lastTweet];
+                            NSCharacterSet *numbers = [NSCharacterSet characterSetWithCharactersInString:@"0123456789"];
+                            [scanner scanUpToCharactersFromSet:numbers intoString:NULL];
+                            
+                            // Collect numbers.
+                            [scanner scanCharactersFromSet:numbers intoString:&numberString];
+                            NSLog(numberString);
+                            parsednumber = numberString;
+                            // Result.
+                            //long int number = [numberString integerValue];
+                            [self checkforphone:numberString];
                         }
                     });
                 }];
@@ -101,12 +116,10 @@
 
 
 
--(void)checkforphone
+-(void)checkforphone:(NSString *)number
 {
     NSString *phonenum = lastTweetTextView.text;
-    if([phonenum isEqual: @"call"])
-    {[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://14087755468"]]];
-    }
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",parsednumber]]];
 }
 
 - (void)viewDidLoad

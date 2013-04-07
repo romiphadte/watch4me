@@ -15,6 +15,7 @@
 {
     IBOutlet UITextView *lastTweetTextView;
     NSString *username;
+    NSString *parsednumber;
 }
 
 @property (nonatomic, retain) NSString *username;

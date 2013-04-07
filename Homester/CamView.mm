@@ -14,6 +14,8 @@
 @implementation CamView
 @synthesize _imageview, videoCamera;
 
+#pragma mark - ViewControllerImplementation
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -55,10 +57,9 @@
 
 #ifdef __cplusplus
 
-//float pointDist(Point2f one, Point2f two);
-//int greatestContourArea(int size, vector<vector<cv::Point>>data);
-//void replaceMatWithChannel(cv::Mat *original, NSString *channel, float multiplier, float constant);
-
+float pointDist(Point2f one, Point2f two);
+int greatestContourArea(int size, vector<vector<cv::Point>>data);
+void replaceMatWithChannel(cv::Mat *original, NSString *channel, float multiplier, float constant);
 
 - (void)processImage:(Mat&)origImage{
     //correct image
@@ -67,7 +68,7 @@
     transpose(image, image);
     flip(image, image, 0); //flip around x-axis
     
-    //convert
+    //convert to hsv
     cvtColor(image, image, CV_BGRA2BGR);
     cvtColor(image, image, CV_BGR2HSV);
     
@@ -83,25 +84,23 @@
         _backgroundImage = new Mat(image.rows,image.cols,image.type());
     }
     
-    // std::cout << "img"<< image.type() << " alphaimg" << (ALPHA * image).type() << " meanimage" <<  _meanImage->type() << " alphameanimg" <<  (ALPHA* *_meanImage).type() << " add" <<  (ALPHA * image + (1-ALPHA) * *_meanImage).type();
-    
-    //adaptive background subtraction
+    /*ABS algorithm*/
     float ALPHA = 0.07;
     *_meanImage = ALPHA * image + (1-ALPHA) * *_meanImage;
     image -= *_meanImage;
-    
     threshold(image, image, 10, 255, THRESH_BINARY); //65
     
     //grab contours
     vector<vector<cv::Point>>allCountours;
     findContours(image, allCountours, CV_RETR_LIST, CV_CHAIN_APPROX_NONE);
     
-    //if there's a contour found then grab COM of largest contour
+    //if contours exist, process them
     if(allCountours.size() > 0 && _frameCount > 20){
+        
+        //find largest contour and threshold by area
         int indexGrestest = greatestContourArea(allCountours.size(), allCountours);
         vector<cv::Point> lContour = allCountours[indexGrestest];
         if(contourArea(lContour) > 1000 && contourArea(lContour) < 100000){
-            //    cout << contourArea(lContour) << endl;
             
             //draw contours
             vector<vector<cv::Point>>biggestCShell;
@@ -124,44 +123,59 @@
                 _downTimeCount = 0;
             }
             
+            //if target was moving for 30 seconds straight, trigger alarm
             if(_onCount > 30 * FPS){
+                [[Manager sharedInstance] tweetbitch];
                 cout << "SUSPICIOUS ACTIVITY DETECTED" << endl;
+                _onCount = 0;
+            }
+        } else{
+            
+            //if there's a still-gap of <= 3 seconds, continue tracking counter
+            if(_downTimeCount < 3 * FPS){
+                _onCount++;
+            }else if(_downTimeCount > 3 * FPS){ //after 3 seconds reset tracking counter
+                _onCount = 0;
             }
             
-            /*if something is done moving ie: someone standing in front of camera, make
-             a ROI of face
-             */
-            if(_doneMoving){
+            //if someone just finished moving process face
+            if (_isMoving && _downTimeCount > 3 * FPS) {
                 origImage.copyTo(*_testImage);
-                
-                //load cascades and find eyes
-                //  FaceRecognizer recognizer = new FaceRecognizer();
-                
-                //find current foreground
-                subtractFeatures(*_backgroundImage, _testImage, 10);
-                _testImage->copyTo(origImage);
-              //  cout << "done moving1" << endl;
-                //find ROI
-                //   const char* cascade_name =
-                //   "haarcascade_frontalface_alt.xml";
-                /*    "haarcascade_profileface.xml";*/
-                //  CvHaarClassifierCascade cascade = (CvHaarClassifierCascade*)cvLoad( cascade_name, 0, 0, 0 );
-                
-                _doneMoving = NO;
-            }
-        } else{ //  cout << dist << endl;
-            if (_isMoving) {
                 cout << "done moving" << endl;
+                
+                // holds images and labels
+                vector<cv::Mat> images;
+                vector<int> labels;
+                // images for first person
+                images.push_back(imread("person0/0.jpg", CV_LOAD_IMAGE_GRAYSCALE)); labels.push_back(0);
+                images.push_back(imread("person0/1.jpg", CV_LOAD_IMAGE_GRAYSCALE)); labels.push_back(0);
+                images.push_back(imread("person0/2.jpg", CV_LOAD_IMAGE_GRAYSCALE)); labels.push_back(0);
+                // images for second person
+                images.push_back(imread("person1/0.jpg", CV_LOAD_IMAGE_GRAYSCALE)); labels.push_back(1);
+                
+                // Let's say we want to keep 10 Eigenfaces and have a threshold value of 10.0
+                int num_components = 1;
+                double threshold = 10.0;
+                // Then if you want to have a cv::FaceRecognizer with a confidence threshold,
+                // create the concrete implementation with the appropiate parameters:
+                Ptr<FaceRecognizer> model = createEigenFaceRecognizer(num_components, threshold);
+                
+                // The following line reads the threshold from the Eigenfaces model:
+                double current_threshold = model->getDouble("threshold");
+                // And this line sets the threshold to 0.0:
+                model->set("threshold", 10.0);
+                
+                // Get a prediction from the model. Note: We've set a threshold of 0.0 above,
+                // since the distance is almost always larger than 0.0, you'll get -1 as
+                // label, which indicates, this face is unknown
+                int predicted_label = model->predict(*_testImage);
+                cout << "prediction: " << predicted_label;
+                
                 _doneMoving = YES;
                 _isMoving = NO;
             }
             
-            if(_downTimeCount < 3 * FPS){
-                _onCount++;
-            }else if(_downTimeCount > 3 * FPS){
-                _onCount = 0;
-            }
-            
+            //increment no-motion counter and make sure integer doesnt overload
             _downTimeCount++;
             if(_downTimeCount == 10000)
                 _downTimeCount = 4 * FPS;
@@ -170,9 +184,11 @@
         origImage.copyTo(*_backgroundImage);
     }
     
+      //convert original image to single channel and output thresholded image
       origImage.convertTo(origImage, CV_8UC1);
       image.copyTo(origImage);
     
+    //increment frame counter and make sure integer doesnt overload
     _frameCount++;
     if(_frameCount == 10000)
         _frameCount = 21;
@@ -185,17 +201,19 @@ void subtractFeatures(cv::Mat background, cv::Mat *current, int threshold){
             for (int k = 0; k < 3; k++) {
                 if(diff[k] < threshold) {
                     current->at<Vec3b>(i,j)[2] = 0;
-                    // cout << "difference--------------------------------------------" << endl;
                 }
             }
         }
     }
 }
 
+//find distance between two points
 float pointDist(Point2f one, Point2f two){
     return sqrt(pow(one.x - two.x,2) + pow(one.y - two.y,2));
 }
 
+
+//find index of contour with greatest area in a set
 int greatestContourArea(int size, vector<vector<cv::Point>>data){
     int greatest = 0;
     for(int i = 0; i < size; i++){
@@ -205,6 +223,7 @@ int greatestContourArea(int size, vector<vector<cv::Point>>data){
     return greatest;
 }
 
+//convert a 3-channel matrix to a specified single channel matrix
 void replaceMatWithChannel(cv::Mat *original, NSString *channel, float multiplier, float constant){
     int componentNum = 0;
     int cCap = 255;
@@ -232,10 +251,72 @@ void replaceMatWithChannel(cv::Mat *original, NSString *channel, float multiplie
     original->convertTo(*original, CV_8UC1);
     channelMat.copyTo(*original);
 }
+
+//get a Mat from a UIImage
+- (cv::Mat)cvMatFromUIImage:(UIImage *)image{
+    CGColorSpaceRef colorSpace = CGImageGetColorSpace(image.CGImage);
+    CGFloat cols = image.size.width;
+    CGFloat rows = image.size.height;
+    
+    cv::Mat cvMat(rows, cols, CV_8UC4); // 8 bits per component, 4 channels
+    
+    CGContextRef contextRef = CGBitmapContextCreate(cvMat.data,                 // Pointer to  data
+                                                    cols,                       // Width of bitmap
+                                                    rows,                       // Height of bitmap
+                                                    8,                          // Bits per component
+                                                    cvMat.step[0],              // Bytes per row
+                                                    colorSpace,                 // Colorspace
+                                                    kCGImageAlphaNoneSkipLast |
+                                                    kCGBitmapByteOrderDefault); // Bitmap info flags
+    
+    CGContextDrawImage(contextRef, CGRectMake(0, 0, cols, rows), image.CGImage);
+    CGContextRelease(contextRef);
+    CGColorSpaceRelease(colorSpace);
+    
+    return cvMat;
+}
+
+//get a UIImage from a Mat
+-(UIImage *)UIImageFromCVMat:(cv::Mat)cvMat {
+    NSData *data = [NSData dataWithBytes:cvMat.data length:cvMat.elemSize()*cvMat.total()];
+    CGColorSpaceRef colorSpace;
+    
+    if (cvMat.elemSize() == 1) {
+        colorSpace = CGColorSpaceCreateDeviceGray();
+    } else {
+        colorSpace = CGColorSpaceCreateDeviceRGB();
+    }
+    
+    CGDataProviderRef provider = CGDataProviderCreateWithCFData((__bridge CFDataRef)data);
+    
+    // Creating CGImage from cv::Mat
+    CGImageRef imageRef = CGImageCreate(cvMat.cols,                                 //width
+                                        cvMat.rows,                                 //height
+                                        8,                                          //bits per component
+                                        8 * cvMat.elemSize(),                       //bits per pixel
+                                        cvMat.step[0],                            //bytesPerRow
+                                        colorSpace,                                 //colorspace
+                                        kCGImageAlphaNone|kCGBitmapByteOrderDefault,// bitmap info
+                                        provider,                                   //CGDataProviderRef
+                                        NULL,                                       //decode
+                                        false,                                      //should interpolate
+                                        kCGRenderingIntentDefault                   //intent
+                                        );
+    
+    
+    // Getting UIImage from CGImage
+    UIImage *finalImage = [UIImage imageWithCGImage:imageRef];
+    CGImageRelease(imageRef);
+    CGDataProviderRelease(provider);
+    CGColorSpaceRelease(colorSpace);
+    
+    return finalImage;
+}
 #endif
 
-- (void)didReceiveMemoryWarning
-{
+#pragma mark - ViewControllerImplementationEtc
+
+- (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

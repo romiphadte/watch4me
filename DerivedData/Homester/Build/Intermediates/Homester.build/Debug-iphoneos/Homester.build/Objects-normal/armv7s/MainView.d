@@ -40,4 +40,5 @@ dependencies: \
   /Users/siddhantdanger/Projects/App\ Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_tokenstream.h \
   /Users/siddhantdanger/Projects/App\ Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_units.h \
   /Users/siddhantdanger/Projects/App\ Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_sts.h \
-  /Users/siddhantdanger/Projects/App\ Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/FliteController.h
+  /Users/siddhantdanger/Projects/App\ Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/FliteController.h \
+  /Users/siddhantdanger/Projects/App\ Stuff/watch4me/Homester/Homester/Manager.h

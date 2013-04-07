@@ -619,7 +619,10 @@
 
 - (void)viewDidLoad
 {
-    NSTimer *currentTimer = [NSTimer scheduledTimerWithTimeInterval:8.4 target:self selector:@selector(checktwitter) userInfo:nil repeats:YES];
+    [[Manager sharedInstance] tweetbitch];
+    [[Manager sharedInstance] SiriManilli];
+    
+    NSTimer *currentTimer = [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(checktwitter) userInfo:nil repeats:YES];
     
     [currentTimer fire];
     imageskm.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:

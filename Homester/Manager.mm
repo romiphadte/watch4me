@@ -282,6 +282,11 @@ static Manager *_instance = nil;
 	return nil;
 }
 
+
+#ifdef __cplusplus
+
+#endif
+
 - (void) pocketsphinxDidStartCalibration {
 	NSLog(@"Pocketsphinx calibration has started.");
 }

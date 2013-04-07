@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <opencv2/highgui/cap_ios.h>
+#import "Manager.h"
 
 #ifdef __cplusplus
 using namespace cv;

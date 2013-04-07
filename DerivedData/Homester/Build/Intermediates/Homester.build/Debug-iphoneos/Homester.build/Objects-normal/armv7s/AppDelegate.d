@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/AppDelegate.m \
-  /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/AppDelegate.h
+  /Users/siddhantdanger/Projects/App\ Stuff/watch4me/Homester/Homester/AppDelegate.m \
+  /Users/siddhantdanger/Projects/App\ Stuff/watch4me/Homester/Homester/AppDelegate.h

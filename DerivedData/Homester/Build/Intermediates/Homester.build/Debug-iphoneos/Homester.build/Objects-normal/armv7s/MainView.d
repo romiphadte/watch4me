@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/MainView.m \
-  /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/MainView.h
+  /Users/siddhantdanger/Projects/App\ Stuff/watch4me/Homester/Homester/MainView.m \
+  /Users/siddhantdanger/Projects/App\ Stuff/watch4me/Homester/Homester/MainView.h

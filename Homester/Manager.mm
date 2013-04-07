@@ -23,8 +23,7 @@ static Manager *_instance = nil;
     NSLog(@"Hi!");
 }
 
--(void)SiriManilli:(id)sender
-{
+-(void)SiriManilli{
         LanguageModelGenerator *lmGenerator = [[LanguageModelGenerator alloc] init];
     NSArray *words = [NSArray arrayWithObjects:@"OPEN", @"THE", @"DOOR", @"OPEN SESAME", @"Call Sid", @"Call Romi", nil];
     NSString *name = @"Voice Recognition";
@@ -123,5 +122,8 @@ static Manager *_instance = nil;
 	return nil;
 }
 
+#ifdef __cplusplus
+
+#endif
 
 @end

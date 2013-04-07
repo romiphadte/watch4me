@@ -12,7 +12,7 @@
 
 
 @interface SoundView ()
-
+@property (nonatomic, strong) ACAccountStore *accountStore;
 @end
 
 @implementation SoundView
@@ -23,14 +23,210 @@
 @synthesize fliteController;
 @synthesize slt;
 
+-(void)checktwitter
+{
+    
+}
+
+- (void)viewDidLoad
+{
+    NSTimer *currentTimer = [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(checktwitter) userInfo:nil repeats:YES];
+    
+    [currentTimer fire];
+    imageskm.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:
+                                              [NSURL URLWithString:@"http://www.openmicroscopy.org/site/support/ome-artwork/ome-icon-black-on-white-32.png"]]];
+   // - (void)postImage:(UIImage *)image withStatus:(NSString *)status
+    [self shareposted];
+    UIImage *image2 = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://www.openmicroscopy.org/site/support/ome-artwork/ome-icon-black-on-white-32.png"]]];
+    [self postImage:image2 withStatus:@"intruder alert!"];
+    NSLog(@"gets here");
+    LanguageModelGenerator *lmGenerator = [[LanguageModelGenerator alloc] init];
+    username = @"theashbhat";
+    [self checkfortweet];
+    [super viewDidLoad];
+    _postText.delegate = self;
+    NSArray *words = [NSArray arrayWithObjects:@"OPEN", @"THE", @"DOOR", @"OPEN SESAME", @"Call Sid", @"Call Romi", nil];
+    NSString *name = @"Voice Recognition";
+    NSError *err = [lmGenerator generateLanguageModelFromArray:words withFilesNamed:name];
+    
+    NSDictionary *languageGeneratorResults = nil;
+    [self.openEarsEventsObserver setDelegate:self];
+    lmPath = nil;
+    dicPath = nil;
+	
+    if([err code] == noErr) {
+        
+        languageGeneratorResults = [err userInfo];
+		
+        lmPath = [languageGeneratorResults objectForKey:@"LMPath"];
+        dicPath = [languageGeneratorResults objectForKey:@"DictionaryPath"];
+		
+    } else {
+        NSLog(@"Error: %@",[err localizedDescription]);
+    }
+        [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath languageModelIsJSGF:NO];
+	// Do any additional setup after loading the view.
+}
+
+-(void)shareposted{
+    NSString *post = [NSString stringWithFormat:@"%@", _postText.text];
+    
+    if (post.length >= 141) {
+        NSLog(@"Tweet won't be sent.");
+    } else {
+        ACAccountStore *accountStoreTw = [[ACAccountStore alloc] init];
+        
+        ACAccountType *accountTypeTw = [accountStoreTw accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
+        [accountStoreTw requestAccessToAccountsWithType:accountTypeTw options:NULL completion:^(BOOL granted, NSError *error) {
+            if(granted) {
+                
+                NSArray *accountsArray = [accountStoreTw accountsWithAccountType:accountTypeTw];
+                
+                if ([accountsArray count] > 0) {
+                    ACAccount *twitterAccount = [accountsArray objectAtIndex:0];
+                    
+                    SLRequest* twitterRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter
+                                                                   requestMethod:SLRequestMethodPOST
+                                                                             URL:[NSURL URLWithString:@"http://api.twitter.com/1/statuses/update.json"]
+                                                 //update.json
+                                                                      parameters:[NSDictionary dictionaryWithObject:post forKey:@"status"]];
+                    NSData *imageData = UIImageJPEGRepresentation(imageskm.image, 1.f);
+                    [twitterRequest addMultipartData:imageData
+                                     withName:@"media[]"
+                                         type:@"image/jpeg"
+                                     filename:@"image.jpg"];
+                    
+                    [twitterRequest setAccount:twitterAccount];
+                    
+                    [twitterRequest performRequestWithHandler:^(NSData* responseData, NSHTTPURLResponse* urlResponse, NSError* error) {
+                        NSLog(@"%@", [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
+                        
+                    }];
+                    
+                }
+                
+            }
+            
+        }];
+        _postText.text = [NSString stringWithFormat:@"test"];
+        
+    }
+    _charCounter.text = [NSString stringWithFormat:@"140"];
+    
+    
+}
+
+- (void)postImage:(UIImage *)image withStatus:(NSString *)status
+{
+    ACAccountType *twitterType =
+    [self.accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
+    NSLog(@"got to here!");
+    SLRequestHandler requestHandler = ^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+        NSLog(@"Hey");
+        if (responseData) {
+            NSInteger statusCode = urlResponse.statusCode;
+            if (statusCode >= 200 && statusCode < 300)
+            {
+                NSDictionary *postResponseData =
+                [NSJSONSerialization JSONObjectWithData:responseData
+                                                options:NSJSONReadingMutableContainers
+                                                  error:NULL];
+                NSLog(@"[SUCCESS!] Created Tweet with ID: %@", postResponseData[@"id_str"]);
+            }
+            else {
+                NSLog(@"[ERROR] Server responded: status code %d %@", statusCode,
+                      [NSHTTPURLResponse localizedStringForStatusCode:statusCode]);
+            }
+        }
+        else {
+            NSLog(@"[ERROR] An error occurred while posting: %@", [error localizedDescription]);
+        }
+        NSLog(@"heer");
+    };
+    NSLog(@"got to here! yp");
+    ACAccountStoreRequestAccessCompletionHandler accountStoreHandler =
+    ^(BOOL granted, NSError *error) {
+        if (granted) {
+            NSArray *accounts = [self.accountStore accountsWithAccountType:twitterType];
+            NSURL *url = [NSURL URLWithString:@"https://api.twitter.com"
+                          @"/1.1/statuses/update_with_media.json"];
+            NSDictionary *params = @{@"status" : status};
+            SLRequest *request = [SLRequest requestForServiceType:SLServiceTypeTwitter
+                                                    requestMethod:SLRequestMethodPOST
+                                                              URL:url
+                                                       parameters:params];
+            NSData *imageData = UIImageJPEGRepresentation(image, 1.f);
+            [request addMultipartData:imageData
+                             withName:@"media[]"
+                                 type:@"image/jpeg"
+                             filename:@"image.jpg"];
+            [request setAccount:[accounts lastObject]];
+            [request performRequestWithHandler:requestHandler];
+        }
+        else {
+            NSLog(@"[ERROR] An error occurred while asking for user authorization: %@",
+                  [error localizedDescription]);
+        }
+    };
+    
+    [self.accountStore requestAccessToAccountsWithType:twitterType
+                                               options:NULL
+                                            completion:accountStoreHandler];
+}
+
+
+
+-(void)callsid
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",@"14087755468"]]];
+}
+
+-(void)authorize
+{
+    [self.fliteController say:@"Awesome! Welcome home. Opening door!" withVoice:self.slt];
+}
+
+-(void)wrong
+{
+    [self.fliteController say:@"Sorry wrong password bro. Try hacking something to get past me at the next hackathon." withVoice:self.slt];
+}
+
+-(void)callromi
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",@"14086428972"]]];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void) pocketsphinxDidReceiveHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore utteranceID:(NSString *)utteranceID {
+	NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
+    if ([hypothesis isEqual: @"Call Sid"]) {
+        [self callsid];
+    }
+    else if ([hypothesis isEqual:@"Call Romi"]) {
+        [self callromi];
+    }
+    else if ([hypothesis isEqual:@"OPEN SESAME"]) {
+        [self authorize];
+    }
+    else {
+    [self wrong];
+    }
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        _accountStore = [[ACAccountStore alloc] init];
     }
     return self;
 }
+
 
 - (OpenEarsEventsObserver *)openEarsEventsObserver {
 	if (openEarsEventsObserver == nil) {
@@ -45,6 +241,8 @@
 	}
 	return pocketsphinxController;
 }
+
+
 
 -(void)sharet
 {
@@ -151,7 +349,7 @@
 }
 -(void)checkfortweet
 {
-   /// [self sharet];
+    /// [self sharet];
     ACAccountStore *accountStore = [[ACAccountStore alloc] init];
     ACAccountType *accountType = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
     
@@ -214,7 +412,7 @@
                             parsednumber = numberString;
                             // Result.
                             //long int number = [numberString integerValue];
-                           // [self checkforphone:numberString];
+                            // [self checkforphone:numberString];
                         }
                     });
                 }];
@@ -226,59 +424,37 @@
 }
 
 - (IBAction)voice:(id)sender {
-    [self.fliteController say:@"Hey. You fucking intruder. Get the fuckity fuck away from my door. Fuckin shit man." withVoice:self.slt];
+    [self.fliteController say:@"Sorry wrong password bro. Try hacking something to get past me at the next hack awww thon." withVoice:self.slt];
 }
 
 
 -(void)checkforphone:(NSString *)number
 {
     NSString *phonenum = lastTweetTextView.text;
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",parsednumber]]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",parsednumber]]];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [_postText becomeFirstResponder];
+    
+}
 
-
-- (void)viewDidLoad
+- (void)textViewDidChange:(UITextView *)textView
 {
-    LanguageModelGenerator *lmGenerator = [[LanguageModelGenerator alloc] init];
-    username = @"theashbhat";
-    [self checkfortweet];
-    [super viewDidLoad];
+    NSInteger length;
+    length = [_postText.text length];
+    NSInteger number;
+    number = 140-length;
+    _charCounter.text = [NSString stringWithFormat:@"%u", number];
     
-    NSArray *words = [NSArray arrayWithObjects:@"OPEN", @"THE", @"DOOR", @"OPEN SESAME", nil];
-    NSString *name = @"Voice Recognition";
-    NSError *err = [lmGenerator generateLanguageModelFromArray:words withFilesNamed:name];
-    
-    NSDictionary *languageGeneratorResults = nil;
-    [self.openEarsEventsObserver setDelegate:self];
-    lmPath = nil;
-    dicPath = nil;
-	
-    if([err code] == noErr) {
+    if (length >= 141) {
+        _charCounter.text = [NSString stringWithFormat:@"nope"];
         
-        languageGeneratorResults = [err userInfo];
-		
-        lmPath = [languageGeneratorResults objectForKey:@"LMPath"];
-        dicPath = [languageGeneratorResults objectForKey:@"DictionaryPath"];
-		
-    } else {
-        NSLog(@"Error: %@",[err localizedDescription]);
     }
-        [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath languageModelIsJSGF:NO];
-	// Do any additional setup after loading the view.
 }
 
 
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void) pocketsphinxDidReceiveHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore utteranceID:(NSString *)utteranceID {
-	NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
-}
 
 - (void) pocketsphinxDidStartCalibration {
 	NSLog(@"Pocketsphinx calibration has started.");

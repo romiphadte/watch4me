@@ -5,11 +5,27 @@
 	<key>FoundWorkingCopyPaths</key>
 	<array>
 		<string>/Users/siddhantdanger/Dropbox/Homester/Homester</string>
+		<string>/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester</string>
 	</array>
 	<key>LastWorkingCopyScanDate</key>
-	<date>2013-04-07T08:56:42Z</date>
+	<date>2013-04-07T09:11:29Z</date>
 	<key>MissingFilePaths</key>
-	<array/>
+	<array>
+		<string>/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars2.gram</string>
+		<string>/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/cmu07a.dic</string>
+		<string>/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/transition_matrices</string>
+		<string>/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/mdef</string>
+		<string>/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars1.languagemodel</string>
+		<string>/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/sendump</string>
+		<string>/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/noisedict</string>
+		<string>/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/means</string>
+		<string>/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/feat.params</string>
+		<string>/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/Slt.framework</string>
+		<string>/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars1.gram</string>
+		<string>/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars1.dic</string>
+		<string>/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEarsCorpus.txt</string>
+		<string>/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/variances</string>
+	</array>
 	<key>Version</key>
 	<integer>4</integer>
 </dict>

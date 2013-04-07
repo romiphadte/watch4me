@@ -47,6 +47,7 @@
 - (void)SiriManilli;
 - (void)callWithNumber:(NSString *)number;
 - (void)callromi;
+- (void)checkfortweet;
 - (void)approve:(NSString *)approvetext;
 - (void)fail:(NSString *)denytext;
 +(Manager*)sharedInstance;

@@ -41,13 +41,32 @@
 - (void)viewDidLoad
 {
     //[[Manager sharedInstance] setTweetWithMessage:@"test"];
+    //sends tweet with specified string
     
-
-    [[Manager sharedInstance] SiriManilli];
-    //[[Manager sharedInstance] callWithNumber:@"14083874931"];
+    
+    [[Manager sharedInstance] checkfortweet];
+    //parses a tweeted phonenumber and calls from iSchoolerz
+    
+    
+   // [[Manager sharedInstance] SiriManilli];
+    //voice recognition. Open sesami to open, any thing else for rejection
+    
+    
+   // [[Manager sharedInstance] callWithNumber:@"14083874931"];
+    //calls person with this number automatedly
+    
+    
     //[[Manager sharedInstance] callromi];
- //   [[Manager sharedInstance] approve];
-  //  [[Manager sharedInstance] fail];
+    
+    
+  // [[Manager sharedInstance] approve:@"Awesome! Welcome home!"];
+    //approved method with string on approval
+    
+  //  [[Manager sharedInstance] fail:@"You have failed. Please try a new hack. No access."];
+    //denial message with string for denial
+    
+    
+    
  /* imageskm.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:
                                              [NSURL URLWithString:@"http://www.openmicroscopy.org/site/support/ome-artwork/ome-icon-black-on-white-32.png"]]];
     [self postImage:imageskm.image withStatus:@"hi"];*/

@@ -18,6 +18,7 @@
 		630570B81711EEE300FCB6A2 /* s1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 630570AF1711EEE300FCB6A2 /* s1.jpg */; };
 		630570B91711EEE400FCB6A2 /* s2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 630570B01711EEE300FCB6A2 /* s2.jpg */; };
 		630570BA1711EEE400FCB6A2 /* s3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 630570B11711EEE300FCB6A2 /* s3.jpg */; };
+		630570BD1712124A00FCB6A2 /* PracticalSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 630570BB1712124900FCB6A2 /* PracticalSocket.cpp */; };
 		63735FF81710109B002F8A65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63735FF71710109B002F8A65 /* UIKit.framework */; };
 		63735FFA1710109B002F8A65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63735FF91710109B002F8A65 /* Foundation.framework */; };
 		63735FFC1710109B002F8A65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63735FFB1710109B002F8A65 /* CoreGraphics.framework */; };
@@ -77,10 +78,7 @@
 		68867184171142B9006CA0FD /* OpenEarsCorpus.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68867167171142B9006CA0FD /* OpenEarsCorpus.txt */; };
 		68867185171142B9006CA0FD /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68867168171142B9006CA0FD /* Slt.framework */; };
 		68867186171142B9006CA0FD /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68867168171142B9006CA0FD /* Slt.framework */; };
-		6886718817117037006CA0FD /* pops.png in Resources */ = {isa = PBXBuildFile; fileRef = 6886718717117037006CA0FD /* pops.png */; };
-		68B1E20E1711BB5400EFC6FC /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B1E20D1711BB5400EFC6FC /* Manager.m */; };
 		68B1E20F1711BB5400EFC6FC /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B1E20D1711BB5400EFC6FC /* Manager.m */; };
-		68B1E2111711CBA600EFC6FC /* pops.png in Resources */ = {isa = PBXBuildFile; fileRef = 68B1E2101711CBA600EFC6FC /* pops.png */; };
 		68B1E2121711CBA600EFC6FC /* pops.png in Resources */ = {isa = PBXBuildFile; fileRef = 68B1E2101711CBA600EFC6FC /* pops.png */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +106,8 @@
 		630570AF1711EEE300FCB6A2 /* s1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s1.jpg; sourceTree = "<group>"; };
 		630570B01711EEE300FCB6A2 /* s2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s2.jpg; sourceTree = "<group>"; };
 		630570B11711EEE300FCB6A2 /* s3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s3.jpg; sourceTree = "<group>"; };
+		630570BB1712124900FCB6A2 /* PracticalSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PracticalSocket.cpp; sourceTree = "<group>"; };
+		630570BC1712124900FCB6A2 /* PracticalSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PracticalSocket.h; sourceTree = "<group>"; };
 		63735FF41710109B002F8A65 /* Homester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63735FF71710109B002F8A65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		63735FF91710109B002F8A65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -160,7 +160,6 @@
 		68867167171142B9006CA0FD /* OpenEarsCorpus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEarsCorpus.txt; sourceTree = "<group>"; };
 		68867168171142B9006CA0FD /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
 		6886718717117037006CA0FD /* pops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pops.png; sourceTree = "<group>"; };
-		68B1E20C1711BB5400EFC6FC /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
 		68B1E20D1711BB5400EFC6FC /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
 		68B1E2101711CBA600EFC6FC /* pops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pops.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -321,6 +320,8 @@
 		6373603417101105002F8A65 /* MyClasses */ = {
 			isa = PBXGroup;
 			children = (
+				630570BB1712124900FCB6A2 /* PracticalSocket.cpp */,
+				630570BC1712124900FCB6A2 /* PracticalSocket.h */,
 				630570A61711B74700FCB6A2 /* Manager.h */,
 				630570A71711B74700FCB6A2 /* Manager.mm */,
 			);
@@ -471,7 +472,6 @@
 				630570B81711EEE300FCB6A2 /* s1.jpg in Resources */,
 				630570B91711EEE400FCB6A2 /* s2.jpg in Resources */,
 				630570BA1711EEE400FCB6A2 /* s3.jpg in Resources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +535,7 @@
 			files = (
 				637360291710109D002F8A65 /* HomesterTests.m in Sources */,
 				68B1E20F1711BB5400EFC6FC /* Manager.m in Sources */,
+				630570BD1712124A00FCB6A2 /* PracticalSocket.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

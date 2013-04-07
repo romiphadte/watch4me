@@ -10,7 +10,7 @@
 #import <OpenEars/LanguageModelGenerator.h>
 
 //#ifdef __cplusplus
-//#include "PracticalSocket.h"  // For Socket and SocketException
+#include "PracticalSocket.h"  // For Socket and SocketException
 #include <iostream>           // For cerr and cout
 #include <cstdlib>            // For atoi()
 //#endif
@@ -32,13 +32,13 @@ static Manager *_instance = nil;
 -(void)SiriManilli
 {
     if([Manager sharedInstance]._suspicionArised){
-        [self.fliteController say:@"What is your name?" withVoice:self.slt];
+        [self.fliteController say:@"Suspicious activity detected. What is your name?" withVoice:self.slt];
     } else{
         [self.fliteController say:@"What is your command?" withVoice:self.slt];
     }
     LanguageModelGenerator *lmGenerator = [[LanguageModelGenerator alloc] init];
     _postText.delegate = self;
-    NSArray *words = [NSArray arrayWithObjects: @"OPEN SESAME", @"Call Romi", @"CALL ASH", nil];
+    NSArray *words = [NSArray arrayWithObjects: @"OPEN SESAME", @"CALL ROMI", @"CALL ASH", nil];
     NSString *name = @"Voice Recognition";
     NSError *err = [lmGenerator generateLanguageModelFromArray:words withFilesNamed:name];
     
@@ -95,13 +95,18 @@ static Manager *_instance = nil;
     if ([hypothesis isEqual: @"CALL ASH"]) {
         [self callWithNumber:@"14083874931"];
     }
-    else if ([hypothesis isEqual:@"Call Romi"]) {
+    else if ([hypothesis isEqual:@"CALL ROMI"]) {
         [self callromi];
     }
     else if ([hypothesis isEqual:@"OPEN SESAME"]) {
         [self approve:@"Awesome! Welcome home!"];
-    }
-    else {
+    } else if ([hypothesis isEqual:@"OPEN DOOR"]) {
+        [self performSelectorInBackground:@selector(shouldDoorOpen:) withObject:YES];
+        [self approve:@"Awesome! Welcome home!"];
+    } else if ([hypothesis isEqual:@"CLOSE DOOR"]) {
+        [self performSelectorInBackground:@selector(shouldDoorOpen:) withObject:NO];
+        [self approve:@"Awesome! Welcome home!"];
+    } else {
         if([Manager sharedInstance]._suspicionArised){
             [self performSelectorInBackground:@selector(setTweetWithMessage:) withObject:@"My house is being robbed [Don't worry, hackathon project!]"];
             [self fail:@"You have failed. Please try a new hack. No access."];
@@ -305,49 +310,59 @@ static Manager *_instance = nil;
 	return nil;
 }
 
+-(void)shouldDoorOpen:(BOOL)shouldOpen{
+    char* echo_str = "A";
+    
+    if(!shouldOpen)
+        echo_str = (char*)"B";
+    
+    unsigned short echoServPort = 5;
+    setupTCP("server-address", echo_str, echoServPort);
+}
+
 
 #ifdef __cplusplus
-//using namespace std;
-//
-//const int RCVBUFSIZE = 32;    // Size of receive buffer
-//
-//int setupTCP(string servAddress, char *echoString, unsigned short echoServPort) {
-//    
-//    int echoStringLen = strlen(echoString);   // Determine input length
-//    
-//    try {
-//        // Establish connection with the echo server
-//        TCPSocket sock(servAddress, echoServPort);
-//        
-//        // Send the string to the echo server
-//        sock.send(echoString, echoStringLen);
-//        
-//        char echoBuffer[RCVBUFSIZE + 1];    // Buffer for echo string + \0
-//        int bytesReceived = 0;              // Bytes read on each recv()
-//        int totalBytesReceived = 0;         // Total bytes read
-//        // Receive the same string back from the server
-//        cout << "Received: ";               // Setup to print the echoed string
-//        while (totalBytesReceived < echoStringLen) {
-//            // Receive up to the buffer size bytes from the sender
-//            if ((bytesReceived = (sock.recv(echoBuffer, RCVBUFSIZE))) <= 0) {
-//                cerr << "Unable to read";
-//                exit(1);
-//            }
-//            totalBytesReceived += bytesReceived;     // Keep tally of total bytes
-//            echoBuffer[bytesReceived] = '\0';        // Terminate the string!
-//            cout << echoBuffer;                      // Print the echo buffer
-//        }
-//        cout << endl;
-//        
-//        // Destructor closes the socket
-//        
-//    } catch(SocketException &e) {
-//        cerr << e.what() << endl;
-//        exit(1);
-//    }
-//    
-//    return 0;
-//}
+using namespace std;
+
+const int RCVBUFSIZE = 32;    // Size of receive buffer
+
+int setupTCP(string servAddress, char *echoString, unsigned short echoServPort) {
+    
+    int echoStringLen = strlen(echoString);   // Determine input length
+    
+    try {
+        // Establish connection with the echo server
+        TCPSocket sock(servAddress, echoServPort);
+        
+        // Send the string to the echo server
+        sock.send(echoString, echoStringLen);
+        
+        char echoBuffer[RCVBUFSIZE + 1];    // Buffer for echo string + \0
+        int bytesReceived = 0;              // Bytes read on each recv()
+        int totalBytesReceived = 0;         // Total bytes read
+        // Receive the same string back from the server
+        cout << "Received: ";               // Setup to print the echoed string
+        while (totalBytesReceived < echoStringLen) {
+            // Receive up to the buffer size bytes from the sender
+            if ((bytesReceived = (sock.recv(echoBuffer, RCVBUFSIZE))) <= 0) {
+                cerr << "Unable to read";
+                exit(1);
+            }
+            totalBytesReceived += bytesReceived;     // Keep tally of total bytes
+            echoBuffer[bytesReceived] = '\0';        // Terminate the string!
+            cout << echoBuffer;                      // Print the echo buffer
+        }
+        cout << endl;
+        
+        // Destructor closes the socket
+        
+    } catch(SocketException &e) {
+        cerr << e.what() << endl;
+        exit(1);
+    }
+    
+    return 0;
+}
 
 #endif
 

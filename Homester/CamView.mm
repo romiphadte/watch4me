@@ -129,7 +129,8 @@ void replaceMatWithChannel(cv::Mat *original, NSString *channel, float multiplie
                 _downTimeCount = 0;
             }
             
-            cout << "time sensed: " << (int)(_onCount/FPS);
+            if((int)(_onCount/FPS) > 0)
+                cout << "time sensed: " << (int)(_onCount/FPS) << endl;
             
             //if target was moving for 30 seconds straight, trigger alarm
             if(_onCount > 7 * FPS){
@@ -157,43 +158,46 @@ void replaceMatWithChannel(cv::Mat *original, NSString *channel, float multiplie
                 origImage.copyTo(*_testImage);
                 cout << "done moving" << endl;
                 
-//                // holds images and labels
-//                vector<cv::Mat> images;
-//                vector<int> labels;
+                // holds images and labels
+                vector<cv::Mat> images;
+                vector<int> labels;
 //                // images for first person
-//                IplImage* img1 = cvLoadImage("/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/s1.jpg");
-//                cv::Mat mat1(img1);
-//                cvReleaseImage(&img1);
+////                IplImage* img1 = cvLoadImage("/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/s1.jpg");
+////                cv::Mat mat1(img1);
+////                cvReleaseImage(&img1);
 //                IplImage* img2 = cvLoadImage("/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/s2.jpg");
+//            
 //                cv::Mat mat2(img2);
-//                cvReleaseImage(&img2);
+//             //   cvReleaseImage(&img2);
 //                IplImage* img3 = cvLoadImage("/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/s3.jpg");
 //                cv::Mat mat3(img3);
-//                cvReleaseImage(&img3);
+//            //    cvReleaseImage(&img3);
 //            //    images.push_back(mat1); labels.push_back(0);
-//                images.push_back(mat2); labels.push_back(0);
-//                images.push_back(mat3); labels.push_back(0);
-//                // images for second person
-//                
-//                // Let's say we want to keep 10 Eigenfaces and have a threshold value of 10.0
-//                int num_components = 1;
-//                double threshold = 10.0;
-//                // Then if you want to have a cv::FaceRecognizer with a confidence threshold,
-//                // create the concrete implementation with the appropiate parameters:
-//                Ptr<FaceRecognizer> model = createEigenFaceRecognizer(num_components, threshold);
-//                cout << "rows: " << _testImage->rows << " cols: " << _testImage->cols << endl;
-//                model->train(images, labels);
-//                
-//                // The following line reads the threshold from the Eigenfaces model:
-//                double current_threshold = model->getDouble("threshold");
-//                // And this line sets the threshold to 0.0:
-//                model->set("threshold", 10.0);
-//                
-//                // Get a prediction from the model. Note: We've set a threshold of 0.0 above,
-//                // since the distance is almost always larger than 0.0, you'll get -1 as
-//                // label, which indicates, this face is unknown
-//                int predicted_label = model->predict(*_testImage);
-//                cout << "prediction: " << predicted_label;
+                cv::Mat img1 = imread("/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/s2.jpg");
+                cv::Mat img2 = imread("/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/s3.jpg");
+                images.push_back(img1); labels.push_back(0);
+                images.push_back(img2); labels.push_back(0);
+                // images for second person
+                
+                // Let's say we want to keep 10 Eigenfaces and have a threshold value of 10.0
+                int num_components = 1;
+                double threshold = 10.0;
+                // Then if you want to have a cv::FaceRecognizer with a confidence threshold,
+                // create the concrete implementation with the appropiate parameters:
+                Ptr<FaceRecognizer> model = createEigenFaceRecognizer(num_components, threshold);
+                cout << "rows: " << _testImage->rows << " cols: " << _testImage->cols << endl;
+                model->train(images, labels);
+                
+                // The following line reads the threshold from the Eigenfaces model:
+                double current_threshold = model->getDouble("threshold");
+                // And this line sets the threshold to 0.0:
+                model->set("threshold", 10.0);
+                
+                // Get a prediction from the model. Note: We've set a threshold of 0.0 above,
+                // since the distance is almost always larger than 0.0, you'll get -1 as
+                // label, which indicates, this face is unknown
+                int predicted_label = model->predict(*_testImage);
+                cout << "prediction: " << predicted_label;
                 
                 _doneMoving = YES;
                 _isMoving = NO;

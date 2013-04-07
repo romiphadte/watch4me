@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630570A21710DBAC00FCB6A2 /* SoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 630570A11710DBAC00FCB6A2 /* SoundView.m */; };
 		63735FF81710109B002F8A65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63735FF71710109B002F8A65 /* UIKit.framework */; };
 		63735FFA1710109B002F8A65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63735FF91710109B002F8A65 /* Foundation.framework */; };
 		63735FFC1710109B002F8A65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63735FFB1710109B002F8A65 /* CoreGraphics.framework */; };
@@ -17,12 +18,24 @@
 		6373600C1710109C002F8A65 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6373600B1710109C002F8A65 /* Default@2x.png */; };
 		6373600E1710109C002F8A65 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6373600D1710109C002F8A65 /* Default-568h@2x.png */; };
 		637360111710109D002F8A65 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6373600F1710109D002F8A65 /* MainStoryboard.storyboard */; };
-		637360141710109D002F8A65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637360131710109D002F8A65 /* ViewController.m */; };
+		637360141710109D002F8A65 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 637360131710109D002F8A65 /* MainView.m */; };
 		6373601C1710109D002F8A65 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6373601B1710109D002F8A65 /* SenTestingKit.framework */; };
 		6373601D1710109D002F8A65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63735FF71710109B002F8A65 /* UIKit.framework */; };
 		6373601E1710109D002F8A65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63735FF91710109B002F8A65 /* Foundation.framework */; };
 		637360261710109D002F8A65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 637360241710109D002F8A65 /* InfoPlist.strings */; };
 		637360291710109D002F8A65 /* HomesterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 637360281710109D002F8A65 /* HomesterTests.m */; };
+		6373603817101229002F8A65 /* CamView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6373603717101229002F8A65 /* CamView.mm */; };
+		6373603A171013DD002F8A65 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63736039171013DD002F8A65 /* opencv2.framework */; };
+		6373604217101439002F8A65 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6373603B17101439002F8A65 /* Accelerate.framework */; };
+		6373604317101439002F8A65 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6373603C17101439002F8A65 /* AssetsLibrary.framework */; };
+		6373604417101439002F8A65 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6373603D17101439002F8A65 /* AVFoundation.framework */; };
+		6373604517101439002F8A65 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6373603E17101439002F8A65 /* CoreImage.framework */; };
+		6373604617101439002F8A65 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6373603F17101439002F8A65 /* CoreMedia.framework */; };
+		6373604717101439002F8A65 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6373604017101439002F8A65 /* CoreVideo.framework */; };
+		6373604817101439002F8A65 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6373604117101439002F8A65 /* QuartzCore.framework */; };
+		6373604A17101678002F8A65 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6373604917101678002F8A65 /* libc++.dylib */; };
+		6886714E1710E61E006CA0FD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6886714D1710E61E006CA0FD /* Social.framework */; };
+		688671501710E941006CA0FD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6886714F1710E941006CA0FD /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		630570A01710DBAC00FCB6A2 /* SoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundView.h; sourceTree = "<group>"; };
+		630570A11710DBAC00FCB6A2 /* SoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundView.m; sourceTree = "<group>"; };
 		63735FF41710109B002F8A65 /* Homester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63735FF71710109B002F8A65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		63735FF91710109B002F8A65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,14 +65,27 @@
 		6373600B1710109C002F8A65 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6373600D1710109C002F8A65 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		637360101710109D002F8A65 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		637360121710109D002F8A65 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		637360131710109D002F8A65 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		637360121710109D002F8A65 /* MainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		637360131710109D002F8A65 /* MainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		6373601A1710109D002F8A65 /* HomesterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomesterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6373601B1710109D002F8A65 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		637360231710109D002F8A65 /* HomesterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomesterTests-Info.plist"; sourceTree = "<group>"; };
 		637360251710109D002F8A65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		637360271710109D002F8A65 /* HomesterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomesterTests.h; sourceTree = "<group>"; };
 		637360281710109D002F8A65 /* HomesterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomesterTests.m; sourceTree = "<group>"; };
+		6373603617101229002F8A65 /* CamView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamView.h; sourceTree = "<group>"; };
+		6373603717101229002F8A65 /* CamView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CamView.mm; sourceTree = "<group>"; };
+		63736039171013DD002F8A65 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		6373603B17101439002F8A65 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		6373603C17101439002F8A65 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		6373603D17101439002F8A65 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6373603E17101439002F8A65 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		6373603F17101439002F8A65 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		6373604017101439002F8A65 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		6373604117101439002F8A65 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6373604917101678002F8A65 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		6886714D1710E61E006CA0FD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		6886714F1710E941006CA0FD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +93,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63735FF81710109B002F8A65 /* UIKit.framework in Frameworks */,
-				63735FFA1710109B002F8A65 /* Foundation.framework in Frameworks */,
+				6373604A17101678002F8A65 /* libc++.dylib in Frameworks */,
+				688671501710E941006CA0FD /* Accounts.framework in Frameworks */,
+				6373604217101439002F8A65 /* Accelerate.framework in Frameworks */,
+				6373604317101439002F8A65 /* AssetsLibrary.framework in Frameworks */,
+				6373604417101439002F8A65 /* AVFoundation.framework in Frameworks */,
+				6373604517101439002F8A65 /* CoreImage.framework in Frameworks */,
+				6373604617101439002F8A65 /* CoreMedia.framework in Frameworks */,
+				6373604717101439002F8A65 /* CoreVideo.framework in Frameworks */,
+				6373604817101439002F8A65 /* QuartzCore.framework in Frameworks */,
+				6886714E1710E61E006CA0FD /* Social.framework in Frameworks */,
 				63735FFC1710109B002F8A65 /* CoreGraphics.framework in Frameworks */,
+				63735FFA1710109B002F8A65 /* Foundation.framework in Frameworks */,
+				63735FF81710109B002F8A65 /* UIKit.framework in Frameworks */,
+				6373603A171013DD002F8A65 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +126,7 @@
 		63735FEB1710109B002F8A65 = {
 			isa = PBXGroup;
 			children = (
+				6373604917101678002F8A65 /* libc++.dylib */,
 				63735FFD1710109B002F8A65 /* Homester */,
 				637360211710109D002F8A65 /* HomesterTests */,
 				63735FF61710109B002F8A65 /* Frameworks */,
@@ -106,6 +146,16 @@
 		63735FF61710109B002F8A65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6373603B17101439002F8A65 /* Accelerate.framework */,
+				6373603C17101439002F8A65 /* AssetsLibrary.framework */,
+				6373603D17101439002F8A65 /* AVFoundation.framework */,
+				6373603E17101439002F8A65 /* CoreImage.framework */,
+				6373603F17101439002F8A65 /* CoreMedia.framework */,
+				6373604017101439002F8A65 /* CoreVideo.framework */,
+				6373604117101439002F8A65 /* QuartzCore.framework */,
+				6886714F1710E941006CA0FD /* Accounts.framework */,
+				6886714D1710E61E006CA0FD /* Social.framework */,
+				63736039171013DD002F8A65 /* opencv2.framework */,
 				63735FF71710109B002F8A65 /* UIKit.framework */,
 				63735FF91710109B002F8A65 /* Foundation.framework */,
 				63735FFB1710109B002F8A65 /* CoreGraphics.framework */,
@@ -117,11 +167,11 @@
 		63735FFD1710109B002F8A65 /* Homester */ = {
 			isa = PBXGroup;
 			children = (
+				6373600F1710109D002F8A65 /* MainStoryboard.storyboard */,
+				63736032171010C2002F8A65 /* ViewControllers */,
 				637360061710109C002F8A65 /* AppDelegate.h */,
 				637360071710109C002F8A65 /* AppDelegate.m */,
-				6373600F1710109D002F8A65 /* MainStoryboard.storyboard */,
-				637360121710109D002F8A65 /* ViewController.h */,
-				637360131710109D002F8A65 /* ViewController.m */,
+				63736033171010D1002F8A65 /* MyFiles */,
 				63735FFE1710109C002F8A65 /* Supporting Files */,
 			);
 			path = Homester;
@@ -158,6 +208,42 @@
 				637360241710109D002F8A65 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63736032171010C2002F8A65 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				637360121710109D002F8A65 /* MainView.h */,
+				637360131710109D002F8A65 /* MainView.m */,
+				6373603617101229002F8A65 /* CamView.h */,
+				6373603717101229002F8A65 /* CamView.mm */,
+				630570A01710DBAC00FCB6A2 /* SoundView.h */,
+				630570A11710DBAC00FCB6A2 /* SoundView.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		63736033171010D1002F8A65 /* MyFiles */ = {
+			isa = PBXGroup;
+			children = (
+				637360351710110E002F8A65 /* Images */,
+				6373603417101105002F8A65 /* MyClasses */,
+			);
+			name = MyFiles;
+			sourceTree = "<group>";
+		};
+		6373603417101105002F8A65 /* MyClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MyClasses;
+			sourceTree = "<group>";
+		};
+		637360351710110E002F8A65 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +358,9 @@
 			files = (
 				637360041710109C002F8A65 /* main.m in Sources */,
 				637360081710109C002F8A65 /* AppDelegate.m in Sources */,
-				637360141710109D002F8A65 /* ViewController.m in Sources */,
+				637360141710109D002F8A65 /* MainView.m in Sources */,
+				6373603817101229002F8A65 /* CamView.mm in Sources */,
+				630570A21710DBAC00FCB6A2 /* SoundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,10 +469,18 @@
 		6373602D1710109D002F8A65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Homester/Homester-Prefix.pch";
 				INFOPLIST_FILE = "Homester/Homester-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,10 +488,18 @@
 		6373602E1710109D002F8A65 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Homester/Homester-Prefix.pch";
 				INFOPLIST_FILE = "Homester/Homester-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -453,6 +557,7 @@
 				6373602E1710109D002F8A65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6373602F1710109D002F8A65 /* Build configuration list for PBXNativeTarget "HomesterTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +566,7 @@
 				637360311710109D002F8A65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

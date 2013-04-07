@@ -7,6 +7,10 @@
 //
 
 #import "HomesterTests.h"
+#import <Social/Social.h>
+#import <Accounts/Accounts.h>
+#import <QuartzCore/QuartzCore.h>
+//#import "MYIntroductionView.h"
 
 @implementation HomesterTests
 

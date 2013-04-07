@@ -40,6 +40,7 @@
     //set up variables
     _oldContourCOM = new Point2f();
     _doneMoving = _isMoving = NO;
+    _frameCount = 0;
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -85,7 +86,7 @@
     // std::cout << "img"<< image.type() << " alphaimg" << (ALPHA * image).type() << " meanimage" <<  _meanImage->type() << " alphameanimg" <<  (ALPHA* *_meanImage).type() << " add" <<  (ALPHA * image + (1-ALPHA) * *_meanImage).type();
     
     //adaptive background subtraction
-    float ALPHA = 0.1;
+    float ALPHA = 0.07;
     *_meanImage = ALPHA * image + (1-ALPHA) * *_meanImage;
     image -= *_meanImage;
     
@@ -96,7 +97,7 @@
     findContours(image, allCountours, CV_RETR_LIST, CV_CHAIN_APPROX_NONE);
     
     //if there's a contour found then grab COM of largest contour
-    if(allCountours.size() > 0){
+    if(allCountours.size() > 0 && _frameCount > 20){
         
         int indexGrestest = greatestContourArea(allCountours.size(), allCountours);
         vector<cv::Point> lContour = allCountours[indexGrestest];
@@ -123,7 +124,6 @@
             } else{ //if nothing is moving, check if something WAS moving
                 cout << dist << endl;
                 if (_isMoving) {
-                    cout << "done moving" << endl;
                     _doneMoving = YES;
                     _isMoving = NO;
                 }
@@ -134,6 +134,20 @@
              */
             if(_doneMoving){
                 origImage.copyTo(*_testImage);
+                
+                //load cascades and find eyes
+                //  FaceRecognizer recognizer = new FaceRecognizer();
+                
+                //find current foreground
+                subtractFeatures(*_backgroundImage, _testImage, 10);
+                _testImage->copyTo(origImage);
+                cout << "done moving" << endl;
+                //find ROI
+                //   const char* cascade_name =
+                //   "haarcascade_frontalface_alt.xml";
+                /*    "haarcascade_profileface.xml";*/
+                //  CvHaarClassifierCascade cascade = (CvHaarClassifierCascade*)cvLoad( cascade_name, 0, 0, 0 );
+                
                 _doneMoving = NO;
             }
         }
@@ -141,9 +155,26 @@
         origImage.copyTo(*_backgroundImage);
     }
     
-    origImage.convertTo(origImage, CV_8UC1);
-    image.copyTo(origImage);
+    //  origImage.convertTo(origImage, CV_8UC1);
+    //  image.copyTo(origImage);
     
+    _frameCount++;
+    if(_frameCount == 10000)
+        _frameCount = 21;
+}
+
+void subtractFeatures(cv::Mat background, cv::Mat *current, int threshold){
+    for (int i = 0; i < current->rows; i++) {
+        for (int j = 0; j < current->cols; j++) {
+            Vec3b diff = current->at<Vec3b>(i,j) - background.at<Vec3b>(i,j);
+            for (int k = 0; k < 3; k++) {
+                if(diff[k] < threshold) {
+                    current->at<Vec3b>(i,j)[2] = 0;
+                    // cout << "difference--------------------------------------------" << endl;
+                }
+            }
+        }
+    }
 }
 
 float pointDist(Point2f one, Point2f two){

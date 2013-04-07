@@ -15,7 +15,9 @@
 {
     IBOutlet UITextView *lastTweetTextView;
     NSString *username;
+    NSString *output;
     NSString *parsednumber;
+    SLComposeViewController *myslcomposersheet;
 }
 
 @property (nonatomic, retain) NSString *username;

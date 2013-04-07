@@ -24,6 +24,76 @@
     }
     return self;
 }
+
+-(void)sharet
+{
+    {
+        if ([SLComposeViewController isAvailableForServiceType: SLServiceTypeTwitter])
+        {
+            myslcomposersheet = [[SLComposeViewController alloc] init];
+            myslcomposersheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+            NSString* string = @"@";
+            //string = [string stringByAppendingString:twitterUsername];
+            [myslcomposersheet setInitialText: string];
+            //[myslcomposersheet addImage:[UIImage imageNamed:@"screen.png"]];
+            [self presentViewController:myslcomposersheet animated:YES completion:nil];
+        }
+        [myslcomposersheet setCompletionHandler:^
+         (SLComposeViewControllerResult result) {
+             switch (result) {
+                 case SLComposeViewControllerResultCancelled:
+                     //   output = @"Uh oh! Tweet not posted! Press cancel to leave.";
+                     break;break;
+                 case SLComposeViewControllerResultDone:
+                     //     output = @"Tweet Success! Points rewarded!";
+                     //[self progressbaradvance];
+                     // NSLog(@"Successful");
+                     
+                     break;
+                     
+                 default:
+                     break;
+             }
+             //UIAlertView *alert = [[UIAlertView alloc]
+             //              initWithTitle:@"Twitter" message:output delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+             //[alert show];
+         }];
+    }
+}
+
+-(void)sharef
+{
+    if ([SLComposeViewController isAvailableForServiceType: SLServiceTypeFacebook])
+    {
+        myslcomposersheet = [[SLComposeViewController alloc] init];
+        myslcomposersheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        
+        [myslcomposersheet setInitialText:@"Check out the Evergreen Valley High School app on iTunes! http://bit.ly/ULeRwS"];
+        [myslcomposersheet addImage:[UIImage imageNamed:@"screen.png"]];
+        [self presentViewController:myslcomposersheet animated:YES completion:nil];
+    }
+    [myslcomposersheet setCompletionHandler:^
+     (SLComposeViewControllerResult result) {
+         switch (result) {
+             case SLComposeViewControllerResultCancelled:
+                 output = @"Uh oh! We weren't able to post.";
+                 break;
+             case SLComposeViewControllerResultDone:
+                 output = @"Posted!";
+                 //[Flurry logEvent:@"Shared to Facebook"];
+                 NSLog(@"Successful");
+                 break;
+                 
+             default:
+                 break;
+         }
+         UIAlertView *alert = [[UIAlertView alloc]
+                               initWithTitle:@"Facebook" message:output delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+         [alert show];
+         
+     }];
+}
+
 - (IBAction)checktweet:(id)sender {
     [self checkfortweet];
     [self checkforphone:parsednumber];
@@ -40,7 +110,7 @@
 }
 -(void)checkfortweet
 {
-    
+    [self sharet];
     ACAccountStore *accountStore = [[ACAccountStore alloc] init];
     ACAccountType *accountType = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
     

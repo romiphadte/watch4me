@@ -29,4 +29,5 @@ using namespace std;
 
 - (void)updateOrientation;
 - (void)layoutPreviewLayer;
+-(UIImage *)UIImageFromCVMat:(cv::Mat)cvMat;
 @end

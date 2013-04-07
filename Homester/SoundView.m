@@ -7,6 +7,9 @@
 //
 
 #import "SoundView.h"
+#import <OpenEars/LanguageModelGenerator.h>
+
+
 
 @interface SoundView ()
 
@@ -15,6 +18,10 @@
 @implementation SoundView
 
 @synthesize username;
+@synthesize pocketsphinxController;
+@synthesize openEarsEventsObserver;
+@synthesize fliteController;
+@synthesize slt;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,9 +32,126 @@
     return self;
 }
 
+- (OpenEarsEventsObserver *)openEarsEventsObserver {
+	if (openEarsEventsObserver == nil) {
+		openEarsEventsObserver = [[OpenEarsEventsObserver alloc] init];
+	}
+	return openEarsEventsObserver;
+}
+
+- (PocketsphinxController *)pocketsphinxController {
+	if (pocketsphinxController == nil) {
+		pocketsphinxController = [[PocketsphinxController alloc] init];
+	}
+	return pocketsphinxController;
+}
+
+-(void)sharet
+{
+    {
+        if ([SLComposeViewController isAvailableForServiceType: SLServiceTypeTwitter])
+        {
+            myslcomposersheet = [[SLComposeViewController alloc] init];
+            myslcomposersheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+            NSString* string = @"@";
+            //string = [string stringByAppendingString:twitterUsername];
+            [myslcomposersheet setInitialText: string];
+            //[myslcomposersheet addImage:[UIImage imageNamed:@"screen.png"]];
+            [self presentViewController:myslcomposersheet animated:YES completion:nil];
+        }
+        [myslcomposersheet setCompletionHandler:^
+         (SLComposeViewControllerResult result) {
+             switch (result) {
+                 case SLComposeViewControllerResultCancelled:
+                     //   output = @"Uh oh! Tweet not posted! Press cancel to leave.";
+                     break;break;
+                 case SLComposeViewControllerResultDone:
+                     //     output = @"Tweet Success! Points rewarded!";
+                     //[self progressbaradvance];
+                     // NSLog(@"Successful");
+                     
+                     break;
+                     
+                 default:
+                     break;
+             }
+             
+             //UIAlertView *alert = [[UIAlertView alloc]
+             //              initWithTitle:@"Twitter" message:output delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+             //[alert show];
+         }];
+    }
+}
+- (IBAction)recognizer:(id)sender {
+    [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath languageModelIsJSGF:NO];
+}
+
+
+-(void)sharef
+{
+    if ([SLComposeViewController isAvailableForServiceType: SLServiceTypeFacebook])
+    {
+        myslcomposersheet = [[SLComposeViewController alloc] init];
+        myslcomposersheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        
+        [myslcomposersheet setInitialText:@"Check out the Evergreen Valley High School app on iTunes! http://bit.ly/ULeRwS"];
+        [myslcomposersheet addImage:[UIImage imageNamed:@"screen.png"]];
+        [self presentViewController:myslcomposersheet animated:YES completion:nil];
+    }
+    [myslcomposersheet setCompletionHandler:^
+     (SLComposeViewControllerResult result) {
+         switch (result) {
+             case SLComposeViewControllerResultCancelled:
+                 output = @"Uh oh! We weren't able to post.";
+                 break;
+             case SLComposeViewControllerResultDone:
+                 output = @"Posted!";
+                 //[Flurry logEvent:@"Shared to Facebook"];
+                 NSLog(@"Successful");
+                 break;
+                 
+             default:
+                 break;
+         }
+         UIAlertView *alert = [[UIAlertView alloc]
+                               initWithTitle:@"Facebook" message:output delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+         [alert show];
+         
+     }];
+}
+
+- (FliteController *)fliteController {
+	if (fliteController == nil) {
+		fliteController = [[FliteController alloc] init];
+	}
+	return fliteController;
+}
+
+- (Slt *)slt {
+	if (slt == nil) {
+		slt = [[Slt alloc] init];
+	}
+	return slt;
+}
+
+
+- (IBAction)checktweet:(id)sender {
+    [self checkfortweet];
+    [self checkforphone:parsednumber];
+}
+- (IBAction)check:(id)sender {
+    [self checkfortweet];
+    [self checkforphone:parsednumber];
+}
+
+-(void)youdostuff
+{
+    [self checkfortweet];
+    [self checkforphone:parsednumber];
+}
 -(void)checkfortweet
 {
-    
+   /// [self sharet];
     ACAccountStore *accountStore = [[ACAccountStore alloc] init];
     ACAccountType *accountType = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
     
@@ -79,7 +203,18 @@
                             
                             NSString *lastTweet = [[(NSDictionary *)TWData objectForKey:@"status"] objectForKey:@"text"];
                             lastTweetTextView.text= lastTweet;
-                            [self checkforphone];
+                            NSString *numberString;
+                            NSScanner *scanner = [NSScanner scannerWithString:lastTweet];
+                            NSCharacterSet *numbers = [NSCharacterSet characterSetWithCharactersInString:@"0123456789"];
+                            [scanner scanUpToCharactersFromSet:numbers intoString:NULL];
+                            
+                            // Collect numbers.
+                            [scanner scanCharactersFromSet:numbers intoString:&numberString];
+                            NSLog(numberString);
+                            parsednumber = numberString;
+                            // Result.
+                            //long int number = [numberString integerValue];
+                           // [self checkforphone:numberString];
                         }
                     });
                 }];
@@ -90,21 +225,46 @@
     }];
 }
 
+- (IBAction)voice:(id)sender {
+    [self.fliteController say:@"Hey. You fucking intruder. Get the fuckity fuck away from my door. Fuckin shit man." withVoice:self.slt];
+}
 
 
--(void)checkforphone
+-(void)checkforphone:(NSString *)number
 {
     NSString *phonenum = lastTweetTextView.text;
-        if([phonenum isEqual: @"call"])
-        {[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://14083874931"]]];
-        }
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",parsednumber]]];
 }
+
+
 
 - (void)viewDidLoad
 {
+    LanguageModelGenerator *lmGenerator = [[LanguageModelGenerator alloc] init];
     username = @"theashbhat";
     [self checkfortweet];
     [super viewDidLoad];
+    
+    NSArray *words = [NSArray arrayWithObjects:@"OPEN", @"THE", @"DOOR", @"OPEN SESAME", nil];
+    NSString *name = @"Voice Recognition";
+    NSError *err = [lmGenerator generateLanguageModelFromArray:words withFilesNamed:name];
+    
+    NSDictionary *languageGeneratorResults = nil;
+    [self.openEarsEventsObserver setDelegate:self];
+    lmPath = nil;
+    dicPath = nil;
+	
+    if([err code] == noErr) {
+        
+        languageGeneratorResults = [err userInfo];
+		
+        lmPath = [languageGeneratorResults objectForKey:@"LMPath"];
+        dicPath = [languageGeneratorResults objectForKey:@"DictionaryPath"];
+		
+    } else {
+        NSLog(@"Error: %@",[err localizedDescription]);
+    }
+        [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath languageModelIsJSGF:NO];
 	// Do any additional setup after loading the view.
 }
 
@@ -114,6 +274,50 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) pocketsphinxDidReceiveHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore utteranceID:(NSString *)utteranceID {
+	NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
+}
+
+- (void) pocketsphinxDidStartCalibration {
+	NSLog(@"Pocketsphinx calibration has started.");
+}
+
+- (void) pocketsphinxDidCompleteCalibration {
+	NSLog(@"Pocketsphinx calibration is complete.");
+}
+
+- (void) pocketsphinxDidStartListening {
+	NSLog(@"Pocketsphinx is now listening.");
+}
+
+- (void) pocketsphinxDidDetectSpeech {
+	NSLog(@"Pocketsphinx has detected speech.");
+}
+
+- (void) pocketsphinxDidDetectFinishedSpeech {
+	NSLog(@"Pocketsphinx has detected a period of silence, concluding an utterance.");
+}
+
+- (void) pocketsphinxDidStopListening {
+	NSLog(@"Pocketsphinx has stopped listening.");
+}
+
+- (void) pocketsphinxDidSuspendRecognition {
+	NSLog(@"Pocketsphinx has suspended recognition.");
+}
+
+- (void) pocketsphinxDidResumeRecognition {
+	NSLog(@"Pocketsphinx has resumed recognition.");
+}
+
+- (void) pocketsphinxDidChangeLanguageModelToFile:(NSString *)newLanguageModelPathAsString andDictionary:(NSString *)newDictionaryPathAsString {
+	NSLog(@"Pocketsphinx is now using the following language model: \n%@ and the following dictionary: %@",newLanguageModelPathAsString,newDictionaryPathAsString);
+}
+
+- (void) pocketSphinxContinuousSetupDidFail { // This can let you know that something went wrong with the recognition loop startup. Turn on OPENEARSLOGGING to learn why.
+	NSLog(@"Setting up the continuous recognition loop has failed for some reason, please turn on OpenEarsLogging to learn more.");
 }
 
 @end

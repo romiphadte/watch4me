@@ -36,6 +36,37 @@
 		6373604A17101678002F8A65 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6373604917101678002F8A65 /* libc++.dylib */; };
 		6886714E1710E61E006CA0FD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6886714D1710E61E006CA0FD /* Social.framework */; };
 		688671501710E941006CA0FD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6886714F1710E941006CA0FD /* Accounts.framework */; };
+		68867154171141D0006CA0FD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68867153171141D0006CA0FD /* AudioToolbox.framework */; };
+		68867169171142B9006CA0FD /* cmu07a.dic in Resources */ = {isa = PBXBuildFile; fileRef = 68867159171142B9006CA0FD /* cmu07a.dic */; };
+		6886716A171142B9006CA0FD /* cmu07a.dic in Resources */ = {isa = PBXBuildFile; fileRef = 68867159171142B9006CA0FD /* cmu07a.dic */; };
+		6886716B171142B9006CA0FD /* feat.params in Resources */ = {isa = PBXBuildFile; fileRef = 6886715B171142B9006CA0FD /* feat.params */; };
+		6886716C171142B9006CA0FD /* feat.params in Resources */ = {isa = PBXBuildFile; fileRef = 6886715B171142B9006CA0FD /* feat.params */; };
+		6886716D171142B9006CA0FD /* mdef in Resources */ = {isa = PBXBuildFile; fileRef = 6886715C171142B9006CA0FD /* mdef */; };
+		6886716E171142B9006CA0FD /* mdef in Resources */ = {isa = PBXBuildFile; fileRef = 6886715C171142B9006CA0FD /* mdef */; };
+		6886716F171142B9006CA0FD /* means in Resources */ = {isa = PBXBuildFile; fileRef = 6886715D171142B9006CA0FD /* means */; };
+		68867170171142B9006CA0FD /* means in Resources */ = {isa = PBXBuildFile; fileRef = 6886715D171142B9006CA0FD /* means */; };
+		68867171171142B9006CA0FD /* noisedict in Resources */ = {isa = PBXBuildFile; fileRef = 6886715E171142B9006CA0FD /* noisedict */; };
+		68867172171142B9006CA0FD /* noisedict in Resources */ = {isa = PBXBuildFile; fileRef = 6886715E171142B9006CA0FD /* noisedict */; };
+		68867173171142B9006CA0FD /* sendump in Resources */ = {isa = PBXBuildFile; fileRef = 6886715F171142B9006CA0FD /* sendump */; };
+		68867174171142B9006CA0FD /* sendump in Resources */ = {isa = PBXBuildFile; fileRef = 6886715F171142B9006CA0FD /* sendump */; };
+		68867175171142B9006CA0FD /* transition_matrices in Resources */ = {isa = PBXBuildFile; fileRef = 68867160171142B9006CA0FD /* transition_matrices */; };
+		68867176171142B9006CA0FD /* transition_matrices in Resources */ = {isa = PBXBuildFile; fileRef = 68867160171142B9006CA0FD /* transition_matrices */; };
+		68867177171142B9006CA0FD /* variances in Resources */ = {isa = PBXBuildFile; fileRef = 68867161171142B9006CA0FD /* variances */; };
+		68867178171142B9006CA0FD /* variances in Resources */ = {isa = PBXBuildFile; fileRef = 68867161171142B9006CA0FD /* variances */; };
+		68867179171142B9006CA0FD /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68867162171142B9006CA0FD /* OpenEars.framework */; };
+		6886717A171142B9006CA0FD /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68867162171142B9006CA0FD /* OpenEars.framework */; };
+		6886717B171142B9006CA0FD /* OpenEars1.dic in Resources */ = {isa = PBXBuildFile; fileRef = 68867163171142B9006CA0FD /* OpenEars1.dic */; };
+		6886717C171142B9006CA0FD /* OpenEars1.dic in Resources */ = {isa = PBXBuildFile; fileRef = 68867163171142B9006CA0FD /* OpenEars1.dic */; };
+		6886717D171142B9006CA0FD /* OpenEars1.gram in Resources */ = {isa = PBXBuildFile; fileRef = 68867164171142B9006CA0FD /* OpenEars1.gram */; };
+		6886717E171142B9006CA0FD /* OpenEars1.gram in Resources */ = {isa = PBXBuildFile; fileRef = 68867164171142B9006CA0FD /* OpenEars1.gram */; };
+		6886717F171142B9006CA0FD /* OpenEars1.languagemodel in Resources */ = {isa = PBXBuildFile; fileRef = 68867165171142B9006CA0FD /* OpenEars1.languagemodel */; };
+		68867180171142B9006CA0FD /* OpenEars1.languagemodel in Resources */ = {isa = PBXBuildFile; fileRef = 68867165171142B9006CA0FD /* OpenEars1.languagemodel */; };
+		68867181171142B9006CA0FD /* OpenEars2.gram in Resources */ = {isa = PBXBuildFile; fileRef = 68867166171142B9006CA0FD /* OpenEars2.gram */; };
+		68867182171142B9006CA0FD /* OpenEars2.gram in Resources */ = {isa = PBXBuildFile; fileRef = 68867166171142B9006CA0FD /* OpenEars2.gram */; };
+		68867183171142B9006CA0FD /* OpenEarsCorpus.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68867167171142B9006CA0FD /* OpenEarsCorpus.txt */; };
+		68867184171142B9006CA0FD /* OpenEarsCorpus.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68867167171142B9006CA0FD /* OpenEarsCorpus.txt */; };
+		68867185171142B9006CA0FD /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68867168171142B9006CA0FD /* Slt.framework */; };
+		68867186171142B9006CA0FD /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68867168171142B9006CA0FD /* Slt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +117,22 @@
 		6373604917101678002F8A65 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		6886714D1710E61E006CA0FD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		6886714F1710E941006CA0FD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		68867153171141D0006CA0FD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		68867159171142B9006CA0FD /* cmu07a.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmu07a.dic; sourceTree = "<group>"; };
+		6886715B171142B9006CA0FD /* feat.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = feat.params; sourceTree = "<group>"; };
+		6886715C171142B9006CA0FD /* mdef */ = {isa = PBXFileReference; lastKnownFileType = file; path = mdef; sourceTree = "<group>"; };
+		6886715D171142B9006CA0FD /* means */ = {isa = PBXFileReference; lastKnownFileType = file; path = means; sourceTree = "<group>"; };
+		6886715E171142B9006CA0FD /* noisedict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = noisedict; sourceTree = "<group>"; };
+		6886715F171142B9006CA0FD /* sendump */ = {isa = PBXFileReference; lastKnownFileType = file; path = sendump; sourceTree = "<group>"; };
+		68867160171142B9006CA0FD /* transition_matrices */ = {isa = PBXFileReference; lastKnownFileType = file; path = transition_matrices; sourceTree = "<group>"; };
+		68867161171142B9006CA0FD /* variances */ = {isa = PBXFileReference; lastKnownFileType = file; path = variances; sourceTree = "<group>"; };
+		68867162171142B9006CA0FD /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		68867163171142B9006CA0FD /* OpenEars1.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars1.dic; sourceTree = "<group>"; };
+		68867164171142B9006CA0FD /* OpenEars1.gram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars1.gram; sourceTree = "<group>"; };
+		68867165171142B9006CA0FD /* OpenEars1.languagemodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars1.languagemodel; sourceTree = "<group>"; };
+		68867166171142B9006CA0FD /* OpenEars2.gram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars2.gram; sourceTree = "<group>"; };
+		68867167171142B9006CA0FD /* OpenEarsCorpus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEarsCorpus.txt; sourceTree = "<group>"; };
+		68867168171142B9006CA0FD /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,11 +140,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6373604417101439002F8A65 /* AVFoundation.framework in Frameworks */,
+				68867154171141D0006CA0FD /* AudioToolbox.framework in Frameworks */,
 				6373604A17101678002F8A65 /* libc++.dylib in Frameworks */,
 				688671501710E941006CA0FD /* Accounts.framework in Frameworks */,
 				6373604217101439002F8A65 /* Accelerate.framework in Frameworks */,
 				6373604317101439002F8A65 /* AssetsLibrary.framework in Frameworks */,
-				6373604417101439002F8A65 /* AVFoundation.framework in Frameworks */,
 				6373604517101439002F8A65 /* CoreImage.framework in Frameworks */,
 				6373604617101439002F8A65 /* CoreMedia.framework in Frameworks */,
 				6373604717101439002F8A65 /* CoreVideo.framework in Frameworks */,
@@ -107,6 +155,8 @@
 				63735FFA1710109B002F8A65 /* Foundation.framework in Frameworks */,
 				63735FF81710109B002F8A65 /* UIKit.framework in Frameworks */,
 				6373603A171013DD002F8A65 /* opencv2.framework in Frameworks */,
+				68867179171142B9006CA0FD /* OpenEars.framework in Frameworks */,
+				68867185171142B9006CA0FD /* Slt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +167,8 @@
 				6373601C1710109D002F8A65 /* SenTestingKit.framework in Frameworks */,
 				6373601D1710109D002F8A65 /* UIKit.framework in Frameworks */,
 				6373601E1710109D002F8A65 /* Foundation.framework in Frameworks */,
+				6886717A171142B9006CA0FD /* OpenEars.framework in Frameworks */,
+				68867186171142B9006CA0FD /* Slt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +178,7 @@
 		63735FEB1710109B002F8A65 = {
 			isa = PBXGroup;
 			children = (
+				68867153171141D0006CA0FD /* AudioToolbox.framework */,
 				6373604917101678002F8A65 /* libc++.dylib */,
 				63735FFD1710109B002F8A65 /* Homester */,
 				637360211710109D002F8A65 /* HomesterTests */,
@@ -167,6 +220,7 @@
 		63735FFD1710109B002F8A65 /* Homester */ = {
 			isa = PBXGroup;
 			children = (
+				68867158171142B9006CA0FD /* Framework */,
 				6373600F1710109D002F8A65 /* MainStoryboard.storyboard */,
 				63736032171010C2002F8A65 /* ViewControllers */,
 				637360061710109C002F8A65 /* AppDelegate.h */,
@@ -246,6 +300,36 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		68867158171142B9006CA0FD /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				68867159171142B9006CA0FD /* cmu07a.dic */,
+				6886715A171142B9006CA0FD /* hub4wsj_sc_8k */,
+				68867162171142B9006CA0FD /* OpenEars.framework */,
+				68867163171142B9006CA0FD /* OpenEars1.dic */,
+				68867164171142B9006CA0FD /* OpenEars1.gram */,
+				68867165171142B9006CA0FD /* OpenEars1.languagemodel */,
+				68867166171142B9006CA0FD /* OpenEars2.gram */,
+				68867167171142B9006CA0FD /* OpenEarsCorpus.txt */,
+				68867168171142B9006CA0FD /* Slt.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		6886715A171142B9006CA0FD /* hub4wsj_sc_8k */ = {
+			isa = PBXGroup;
+			children = (
+				6886715B171142B9006CA0FD /* feat.params */,
+				6886715C171142B9006CA0FD /* mdef */,
+				6886715D171142B9006CA0FD /* means */,
+				6886715E171142B9006CA0FD /* noisedict */,
+				6886715F171142B9006CA0FD /* sendump */,
+				68867160171142B9006CA0FD /* transition_matrices */,
+				68867161171142B9006CA0FD /* variances */,
+			);
+			path = hub4wsj_sc_8k;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -322,6 +406,19 @@
 				6373600C1710109C002F8A65 /* Default@2x.png in Resources */,
 				6373600E1710109C002F8A65 /* Default-568h@2x.png in Resources */,
 				637360111710109D002F8A65 /* MainStoryboard.storyboard in Resources */,
+				68867169171142B9006CA0FD /* cmu07a.dic in Resources */,
+				6886716B171142B9006CA0FD /* feat.params in Resources */,
+				6886716D171142B9006CA0FD /* mdef in Resources */,
+				6886716F171142B9006CA0FD /* means in Resources */,
+				68867171171142B9006CA0FD /* noisedict in Resources */,
+				68867173171142B9006CA0FD /* sendump in Resources */,
+				68867175171142B9006CA0FD /* transition_matrices in Resources */,
+				68867177171142B9006CA0FD /* variances in Resources */,
+				6886717B171142B9006CA0FD /* OpenEars1.dic in Resources */,
+				6886717D171142B9006CA0FD /* OpenEars1.gram in Resources */,
+				6886717F171142B9006CA0FD /* OpenEars1.languagemodel in Resources */,
+				68867181171142B9006CA0FD /* OpenEars2.gram in Resources */,
+				68867183171142B9006CA0FD /* OpenEarsCorpus.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +427,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				637360261710109D002F8A65 /* InfoPlist.strings in Resources */,
+				6886716A171142B9006CA0FD /* cmu07a.dic in Resources */,
+				6886716C171142B9006CA0FD /* feat.params in Resources */,
+				6886716E171142B9006CA0FD /* mdef in Resources */,
+				68867170171142B9006CA0FD /* means in Resources */,
+				68867172171142B9006CA0FD /* noisedict in Resources */,
+				68867174171142B9006CA0FD /* sendump in Resources */,
+				68867176171142B9006CA0FD /* transition_matrices in Resources */,
+				68867178171142B9006CA0FD /* variances in Resources */,
+				6886717C171142B9006CA0FD /* OpenEars1.dic in Resources */,
+				6886717E171142B9006CA0FD /* OpenEars1.gram in Resources */,
+				68867180171142B9006CA0FD /* OpenEars1.languagemodel in Resources */,
+				68867182171142B9006CA0FD /* OpenEars2.gram in Resources */,
+				68867184171142B9006CA0FD /* OpenEarsCorpus.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +584,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Homester/Framework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Homester/Homester-Prefix.pch";
@@ -493,6 +604,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Homester/Framework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Homester/Homester-Prefix.pch";
@@ -511,6 +623,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/Homester/Framework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Homester/Homester-Prefix.pch";
@@ -528,6 +641,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/Homester/Framework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Homester/Homester-Prefix.pch";

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SoundView.h"
 @interface MainView : UIViewController
-
+{
+    SoundView *hi;
+}
 @end

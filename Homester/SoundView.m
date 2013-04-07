@@ -24,7 +24,16 @@
     }
     return self;
 }
+- (IBAction)checktweet:(id)sender {
+    [self checkfortweet];
+    [self checkforphone];
+}
 
+-(void)youdostuff
+{
+    [self checkfortweet];
+    [self checkforphone];
+}
 -(void)checkfortweet
 {
     
@@ -95,9 +104,9 @@
 -(void)checkforphone
 {
     NSString *phonenum = lastTweetTextView.text;
-        if([phonenum isEqual: @"call"])
-        {[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://14083874931"]]];
-        }
+    if([phonenum isEqual: @"call"])
+    {[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://14087755468"]]];
+    }
 }
 
 - (void)viewDidLoad

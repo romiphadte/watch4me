@@ -38,20 +38,9 @@
                                     <segue destination="i6y-Ld-nnw" kind="push" id="OLL-OI-xjv"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTB-4b-FyB">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="9zo-bE-me3"/>
-                                    <constraint firstAttribute="height" constant="86" id="TVi-yD-EU1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="vTB-4b-FyB" secondAttribute="bottom" constant="33" id="GQ5-y9-VDD"/>
-                            <constraint firstItem="vTB-4b-FyB" firstAttribute="centerX" secondItem="uiG-sy-G6P" secondAttribute="centerX" type="default" id="Gyv-LR-uDY"/>
                             <constraint firstItem="uiG-sy-G6P" firstAttribute="top" secondItem="3" secondAttribute="top" constant="248" id="KP4-gz-Qih"/>
                             <constraint firstItem="G80-bT-adI" firstAttribute="top" secondItem="3" secondAttribute="top" constant="161" id="fzU-KK-Pzn"/>
                             <constraint firstItem="G80-bT-adI" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="k8y-n8-k6Z"/>
@@ -59,9 +48,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9uK-xc-xB9"/>
-                    <connections>
-                        <outlet property="lastTweetTextView" destination="vTB-4b-FyB" id="0Si-7h-FHE"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -75,7 +61,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="K bby" translatesAutoresizingMaskIntoConstraints="NO" id="gu6-km-UHL">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="tweet checker" translatesAutoresizingMaskIntoConstraints="NO" id="gu6-km-UHL">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="165" id="jit-cx-xVv"/>
@@ -99,7 +85,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KRy-hK-z6R" firstAttribute="top" secondItem="1Db-ec-v5l" secondAttribute="top" type="default" id="2hu-wc-99K"/>
+                            <constraint firstItem="KRy-hK-z6R" firstAttribute="top" secondItem="1Db-ec-v5l" secondAttribute="top" constant="-1" id="A3P-aZ-qh0"/>
                             <constraint firstItem="gu6-km-UHL" firstAttribute="trailing" secondItem="1Db-ec-v5l" secondAttribute="trailing" type="default" id="Hkz-6c-tof"/>
                             <constraint firstItem="gu6-km-UHL" firstAttribute="leading" secondItem="1Db-ec-v5l" secondAttribute="leading" type="default" id="Xb6-Qb-ZnN"/>
                             <constraint firstItem="KRy-hK-z6R" firstAttribute="leading" secondItem="1Db-ec-v5l" secondAttribute="leading" constant="131" id="cG2-Uz-wh9"/>

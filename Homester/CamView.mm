@@ -43,6 +43,8 @@
     _oldContourCOM = new Point2f();
     _doneMoving = _isMoving = NO;
     _frameCount = _onCount = _downTimeCount = 0;
+    
+    [self performSelectorInBackground:@selector(startSpeechRecognition) withObject:nil];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -51,6 +53,10 @@
 
 -(void)viewWillDisappear:(BOOL)animated{
     [self.videoCamera stop];
+}
+
+-(void)startSpeechRecognition{
+    [[Manager sharedInstance] SiriManilli];
 }
 
 #pragma mark - Protocol CvVideoCameraDelegate
@@ -132,6 +138,7 @@ void replaceMatWithChannel(cv::Mat *original, NSString *channel, float multiplie
                 UIImage *image = [self UIImageFromCVMat:*_testImage];
                 
                 //ask question -> voice recognize, tweet built in
+                [Manager sharedInstance]._suspicionArised = YES;
                 [[Manager sharedInstance] SiriManilli];
                 cout << "SUSPICIOUS ACTIVITY DETECTED" << endl;
                 _onCount = 0;

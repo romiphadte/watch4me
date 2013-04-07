@@ -40,6 +40,7 @@
 @property (strong, nonatomic) Slt *slt;
 @property (weak, nonatomic) IBOutlet UITextView *postText;
 @property (weak, nonatomic) IBOutlet UILabel *charCounter;
+@property BOOL _suspicionArised;
 
 
 -(void)sayHi;

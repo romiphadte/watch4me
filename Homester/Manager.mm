@@ -31,10 +31,14 @@ static Manager *_instance = nil;
 
 -(void)SiriManilli
 {
-    [self.fliteController say:@"What is your name?" withVoice:self.slt];
+    if([Manager sharedInstance]._suspicionArised){
+        [self.fliteController say:@"What is your name?" withVoice:self.slt];
+    } else{
+        [self.fliteController say:@"What is your command?" withVoice:self.slt];
+    }
     LanguageModelGenerator *lmGenerator = [[LanguageModelGenerator alloc] init];
     _postText.delegate = self;
-    NSArray *words = [NSArray arrayWithObjects: @"OPEN SESAME", @"Call Romi", @"Call Ash", nil];
+    NSArray *words = [NSArray arrayWithObjects: @"OPEN SESAME", @"Call Romi", @"CALL ASH", nil];
     NSString *name = @"Voice Recognition";
     NSError *err = [lmGenerator generateLanguageModelFromArray:words withFilesNamed:name];
     
@@ -98,9 +102,16 @@ static Manager *_instance = nil;
         [self approve:@"Awesome! Welcome home!"];
     }
     else {
-        [self performSelectorInBackground:@selector(setTweetWithMessage:) withObject:@"My house is being robbed [Don't worry, hackathon project!]"];
-        [self fail:@"You have failed. Please try a new hack. No access."];
+        if([Manager sharedInstance]._suspicionArised){
+            [self performSelectorInBackground:@selector(setTweetWithMessage:) withObject:@"My house is being robbed [Don't worry, hackathon project!]"];
+            [self fail:@"You have failed. Please try a new hack. No access."];
+            [Manager sharedInstance]._suspicionArised = NO;
+        } else{
+         //   [self fail:@"Sorry, action not added to software."];
+        }
     }
+    
+    
 }
 
 
@@ -283,8 +294,10 @@ static Manager *_instance = nil;
 +(Manager*)sharedInstance{
 	@synchronized([Manager class])
 	{
-		if (_instance == nil)
+		if (_instance == nil){
 			_instance = [[self alloc] init];
+            _instance._suspicionArised = NO;
+        }
         
 		return _instance;
 	}

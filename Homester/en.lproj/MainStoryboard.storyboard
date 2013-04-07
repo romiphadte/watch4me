@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Tlu-al-vvO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Tlu-al-vvO">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -38,20 +38,9 @@
                                     <segue destination="i6y-Ld-nnw" kind="push" id="OLL-OI-xjv"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTB-4b-FyB">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="9zo-bE-me3"/>
-                                    <constraint firstAttribute="height" constant="86" id="TVi-yD-EU1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="vTB-4b-FyB" secondAttribute="bottom" constant="33" id="GQ5-y9-VDD"/>
-                            <constraint firstItem="vTB-4b-FyB" firstAttribute="centerX" secondItem="uiG-sy-G6P" secondAttribute="centerX" type="default" id="Gyv-LR-uDY"/>
                             <constraint firstItem="uiG-sy-G6P" firstAttribute="top" secondItem="3" secondAttribute="top" constant="248" id="KP4-gz-Qih"/>
                             <constraint firstItem="G80-bT-adI" firstAttribute="top" secondItem="3" secondAttribute="top" constant="161" id="fzU-KK-Pzn"/>
                             <constraint firstItem="G80-bT-adI" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="k8y-n8-k6Z"/>
@@ -59,9 +48,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9uK-xc-xB9"/>
-                    <connections>
-                        <outlet property="lastTweetTextView" destination="vTB-4b-FyB" id="0Si-7h-FHE"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>

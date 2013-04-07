@@ -2,10 +2,10 @@ THomester
 v5
 r1
 cCheck dependencies
-cProcessInfoPlistFile "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Info.plist" Homester/Homester-Info.plist
 cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/ResourceRules.plist
-cProcessPCH "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-ftibzumuhyenmygpccypcdayxsmz/Homester-Prefix.pch.pth" Homester/Homester-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cProcessPCH++ "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-eehegkkbjxhttkhjfkabqjxpxjwm/Homester-Prefix.pch.pth" Homester/Homester-Prefix.pch normal armv7s objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cProcessInfoPlistFile "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Info.plist" Homester/Homester-Info.plist
+cProcessPCH "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-gsbnpjpqkccoppghtnlnpzjojish/Homester-Prefix.pch.pth" Homester/Homester-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH++ "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-daregoalgmggageeyxmoqxbdpqsx/Homester-Prefix.pch.pth" Homester/Homester-Prefix.pch normal armv7s objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/main.o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/main.m" normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/AppDelegate.o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/AppDelegate.m" normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/MainView.o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/MainView.m" normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -17,7 +17,20 @@ cCopyPNGFile "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Derived
 cCopyStringsFile "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/en.lproj/InfoPlist.strings" Homester/en.lproj/InfoPlist.strings
 cCopyPNGFile "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Default@2x.png" Homester/Default@2x.png
 cCopyPNGFile "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Default-568h@2x.png" Homester/Default-568h@2x.png
+cCpResource Homester/Framework/cmu07a.dic DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/cmu07a.dic
 cCompileStoryboard "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/en.lproj/MainStoryboard.storyboard"
+cCpResource Homester/Framework/hub4wsj_sc_8k/feat.params DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/feat.params
+cCpResource Homester/Framework/hub4wsj_sc_8k/mdef DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/mdef
+cCpResource Homester/Framework/hub4wsj_sc_8k/noisedict DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/noisedict
+cCpResource Homester/Framework/hub4wsj_sc_8k/means DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/means
+cCpResource Homester/Framework/hub4wsj_sc_8k/sendump DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/sendump
+cCpResource Homester/Framework/hub4wsj_sc_8k/transition_matrices DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/transition_matrices
+cCpResource Homester/Framework/hub4wsj_sc_8k/variances DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/variances
+cCpResource Homester/Framework/OpenEars1.dic DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.dic
+cCpResource Homester/Framework/OpenEars1.gram DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.gram
+cCpResource Homester/Framework/OpenEars1.languagemodel DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.languagemodel
+cCpResource Homester/Framework/OpenEars2.gram DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars2.gram
+cCpResource Homester/Framework/OpenEarsCorpus.txt DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEarsCorpus.txt
 cProcessProductPackaging "/Users/siddhantdanger/Library/MobileDevice/Provisioning Profiles/25C40EA4-4E0D-47EE-AB14-3BB513E00183.mobileprovision" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/embedded.mobileprovision"
 cProcessProductPackaging "/Users/siddhantdanger/Library/MobileDevice/Provisioning Profiles/25C40EA4-4E0D-47EE-AB14-3BB513E00183.mobileprovision" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/embedded.mobileprovision"
 cTouch "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"
@@ -58,6 +71,11 @@ N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Develope
 c0000000051088EFD000000000003AE00
 t1359515389
 s241152
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c0000000051088EFE00000000006B1F40
+t1359515390
+s7020352
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 c0000000051088EFF0000000000322700
@@ -437,13 +455,38 @@ N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester
 t1365293699
 s416
 
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7/AppDelegate.o
+t2
+s0
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7/CamView.o
+t2
+s0
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7/Homester.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7/MainView.o
+t2
+s0
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7/SoundView.o
+t2
+s0
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7/main.o
+t2
+s0
+
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/AppDelegate.o
-t1365296362
+t1365327044
 s85856
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/CamView.o
-t1365325286
-s182004
+t1365329754
+s364128
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/Homester.LinkFileList
 c000000005160C4E50000000000000379
@@ -451,16 +494,24 @@ t1365296357
 s889
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/MainView.o
-t1365296363
-s67628
+t1365327045
+s82552
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/SoundView.o
-t1365296362
-s90204
+t1365327045
+s137316
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/main.o
-t1365296362
+t1365327044
 s3448
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-amlmekaiptlffgeyjbzvhzfoydnl/Homester-Prefix.pch.pth
+t2
+s0
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-daregoalgmggageeyxmoqxbdpqsx/Homester-Prefix.pch.pth
+t1365327046
+s19658016
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-eehegkkbjxhttkhjfkabqjxpxjwm/Homester-Prefix.pch.pth
 t1365296371
@@ -470,12 +521,20 @@ N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester
 t1365296361
 s4607160
 
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-gsbnpjpqkccoppghtnlnpzjojish/Homester-Prefix.pch.pth
+t1365327044
+s4607160
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-hirizoepbmfmyicqiiherdnasoor/Homester-Prefix.pch.pth
+t2
+s0
+
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app
-t1365325291
-s408
+t1365329760
+s850
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app.dSYM
-t1365325305
+t1365329758
 s102
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Default-568h@2x.png
@@ -491,12 +550,32 @@ t1365293684
 s6316
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester
-t1365325291
-s742464
+t1365329760
+s7300384
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Info.plist
 t1365293664
 s1085
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.dic
+t1365327052
+s127
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.gram
+t1365327052
+s122
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.languagemodel
+t1365327052
+s1134
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars2.gram
+t1365327052
+s153
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEarsCorpus.txt
+t1365327052
+s78
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/PkgInfo
 t1365293664
@@ -505,6 +584,10 @@ s8
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/ResourceRules.plist
 t1365293664
 s485
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/cmu07a.dic
+t1365327052
+s3245476
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/embedded.mobileprovision
 t1365293699
@@ -515,8 +598,36 @@ t1365293683
 s42
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/en.lproj/MainStoryboard.storyboardc
-t1365296402
+t1365327062
 s306
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/feat.params
+t1365327051
+s181
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/mdef
+t1365327052
+s3068518
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/means
+t1365327051
+s40012
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/noisedict
+t1365327051
+s411
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/sendump
+t1365327052
+s1978199
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/transition_matrices
+t1365327052
+s2464
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/variances
+t1365327052
+s40012
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/AppDelegate.h
 c00000000515FD91C0000000000000115
@@ -529,14 +640,14 @@ t1365235996
 s2007
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.h
-c00000000516135A400000000000002CC
-t1365325220
+c000000005161382300000000000002CC
+t1365325859
 s716
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.mm
-c000000005160BF370000000000000CB1
-t1365294903
-s3249
+c00000000516147B80000000000001957
+t1365329848
+s6487
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Default-568h@2x.png
 c0000000050748B2300000000000048A2
@@ -553,6 +664,281 @@ c0000000050748B230000000000003EEB
 t1349815075
 s16107
 
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/AudioConstants.h
+c000000005161379B00000000000007C7
+t1365325723
+s1991
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/ContinuousAudioUnit.h
+c000000005161379B00000000000010F3
+t1365325723
+s4339
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/ContinuousModel.h
+c000000005161379B0000000000000CA6
+t1365325723
+s3238
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/FliteController.h
+c000000005161379B0000000000001172
+t1365325723
+s4466
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/FliteVoice.h
+c000000005161379B00000000000003A3
+t1365325723
+s931
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/LanguageModelGenerator.h
+c000000005161379B0000000000001031
+t1365325723
+s4145
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/OpenEarsEventsObserver.h
+c000000005161379B000000000000136F
+t1365325723
+s4975
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/PocketsphinxController.h
+c000000005161379B0000000000001D12
+t1365325723
+s7442
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/RuntimeValues.h
+c000000005161379B0000000000000237
+t1365325723
+s567
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_alloc.h
+c000000005161379C000000000000109B
+t1365325724
+s4251
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_audio.h
+c000000005161379C0000000000001595
+t1365325724
+s5525
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_cart.h
+c000000005161379C0000000000000F10
+t1365325724
+s3856
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_endian.h
+c000000005161379C0000000000000FA4
+t1365325724
+s4004
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_error.h
+c000000005161379C0000000000000F87
+t1365325724
+s3975
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_features.h
+c000000005161379C0000000000001268
+t1365325724
+s4712
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_file.h
+c000000005161379C000000000000134C
+t1365325724
+s4940
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_hrg.h
+c000000005161379C0000000000000C57
+t1365325724
+s3159
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_item.h
+c000000005161379C0000000000001957
+t1365325724
+s6487
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_lexicon.h
+c000000005161379C0000000000001192
+t1365325724
+s4498
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_lts.h
+c000000005161379C0000000000000F89
+t1365325724
+s3977
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_phoneset.h
+c000000005161379C0000000000000F7F
+t1365325724
+s3967
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_regex.h
+c000000005161379C0000000000001E4B
+t1365325724
+s7755
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_relation.h
+c000000005161379C0000000000000EC7
+t1365325724
+s3783
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_string.h
+c000000005161379C0000000000000F83
+t1365325724
+s3971
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_sts.h
+c000000005161379C00000000000017C4
+t1365325724
+s6084
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_synth.h
+c000000005161379C0000000000001261
+t1365325724
+s4705
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_tokenstream.h
+c000000005161379C0000000000001564
+t1365325724
+s5476
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_track.h
+c000000005161379C0000000000000E83
+t1365325724
+s3715
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_units.h
+c000000005161379C0000000000000E70
+t1365325724
+s3696
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_utt_utils.h
+c000000005161379C0000000000000EE6
+t1365325724
+s3814
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_utterance.h
+c000000005161379C0000000000000FD2
+t1365325724
+s4050
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_val.h
+c000000005161379C0000000000001870
+t1365325724
+s6256
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_val_const.h
+c000000005161379C00000000000040B8
+t1365325724
+s16568
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_val_defs.h
+c000000005161379C00000000000018BB
+t1365325724
+s6331
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_voice.h
+c000000005161379C0000000000000E5E
+t1365325724
+s3678
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/cst_wave.h
+c000000005161379C0000000000001AC5
+t1365325724
+s6853
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/flite.h
+c000000005161379C00000000000016F8
+t1365325724
+s5880
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/prim_type.h
+c000000005161379E000000000000167B
+t1365325726
+s5755
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/Headers/sphinx_config.h
+c000000005161379E00000000000010BC
+t1365325726
+s4284
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars.framework/OpenEars
+c00000000516137A20000000000B2A32C
+t1365325730
+s11707180
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars1.dic
+c00000000516137A2000000000000007F
+t1365325730
+s127
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars1.gram
+c00000000516137A2000000000000007A
+t1365325730
+s122
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars1.languagemodel
+c00000000516137A2000000000000046E
+t1365325730
+s1134
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars2.gram
+c00000000516137A20000000000000099
+t1365325730
+s153
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEarsCorpus.txt
+c00000000516137A3000000000000004E
+t1365325731
+s78
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/Slt.framework/Headers/Slt.h
+c00000000516137A300000000000000BF
+t1365325731
+s191
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/Slt.framework/Slt
+c00000000516137A60000000000A57E84
+t1365325734
+s10845828
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/cmu07a.dic
+c00000000516137A700000000003185A4
+t1365325735
+s3245476
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/hub4wsj_sc_8k/feat.params
+c00000000516137A800000000000000B5
+t1365325736
+s181
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/hub4wsj_sc_8k/mdef
+c00000000516137A800000000002ED266
+t1365325736
+s3068518
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/hub4wsj_sc_8k/means
+c00000000516137A80000000000009C4C
+t1365325736
+s40012
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/hub4wsj_sc_8k/noisedict
+c00000000516137A8000000000000019B
+t1365325736
+s411
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/hub4wsj_sc_8k/sendump
+c00000000516137A800000000001E2F57
+t1365325736
+s1978199
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/hub4wsj_sc_8k/transition_matrices
+c00000000516137A900000000000009A0
+t1365325737
+s2464
+
+N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/hub4wsj_sc_8k/variances
+c00000000516137A90000000000009C4C
+t1365325737
+s40012
+
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Homester-Prefix.pch
 c00000000515FDA79000000000000016F
 t1365236345
@@ -563,24 +949,24 @@ i<UIKit/UIKit.h>
 i<Foundation/Foundation.h>
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/MainView.h
-c00000000515FDAB200000000000000D1
-t1365236402
-s209
+c00000000516137A900000000000000FC
+t1365325737
+s252
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/MainView.m
-c00000000515FDAC400000000000001DB
-t1365236420
-s475
+c00000000516137A90000000000000225
+t1365325737
+s549
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/SoundView.h
-c000000005160BCBC00000000000001A3
-t1365294268
-s419
+c00000000516137A90000000000000499
+t1365325737
+s1177
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/SoundView.m
-c000000005160BFBB0000000000000F77
-t1365295035
-s3959
+c00000000516137A90000000000002D8B
+t1365325737
+s11659
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/en.lproj/InfoPlist.strings
 c00000000515FD91C000000000000002D
@@ -588,9 +974,9 @@ t1365235996
 s45
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/en.lproj/MainStoryboard.storyboard
-c000000005161363500000000000033BC
-t1365325365
-s13244
+c00000000516137A900000000000041CA
+t1365325737
+s16842
 
 N/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/main.m
 c00000000515FD91C0000000000000150
@@ -779,16 +1165,15 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesb40099b96d11b741^00aaa0b96d11b741^---0#1#0#--18"Check dependencies36"909DA207-BB62-4516-9D72-31C889A36630-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies22c687397f11b741^43e7213a7f11b741^---0#1#0#--18"Check dependencies36"132752C6-C16E-4755-A17B-D39872EC2A17-
 
 CCodeSign "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"
-s387018175.569863
-e387018177.178914
+s387022652.743324
+e387022654.962462
 r1
 xCodeSign
 x/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app
-o/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app: replacing existing signature
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"CodeSign DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app94fb91bf6d11b741^eacc2dc16d11b741^-152"/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app: replacing existing signature-0#0#0#-19%DVTDocumentLocation2@141"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/0000000000000000^1007"CodeSign DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign ba35a4027068ce1dd6f537a7bf4c4e8b80e9fdda "--resource-rules=/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/ResourceRules.plist" --entitlements "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester.xcent" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"36"2FD267FB-772B-4467-8768-1AA75724E301-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"CodeSign DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.appd95fbe3c7f11b741^0f63f63e7f11b741^---0#0#0#-19%DVTDocumentLocation2@141"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/0000000000000000^1007"CodeSign DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign ba35a4027068ce1dd6f537a7bf4c4e8b80e9fdda "--resource-rules=/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/ResourceRules.plist" --entitlements "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester.xcent" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"36"763B6E3F-C5F9-4168-83A3-DC4E230C5D0C-
 
 CCodeSign /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app
 s386987538.294506
@@ -798,9 +1183,24 @@ xCodeSign
 x/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"CodeSign DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.appee7c4b12f610b741^10ae5814f610b741^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/0000000000000000^955"CodeSign DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app    cd /Users/siddhantdanger/Dropbox/Homester/Homester    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign ba35a4027068ce1dd6f537a7bf4c4e8b80e9fdda --resource-rules=/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/ResourceRules.plist --entitlements /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester.xcent /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app36"E16C8D43-9BD9-4FFE-8140-A74AE1570948-
 
+CCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7/AppDelegate.o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/AppDelegate.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7/CamView.o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.mm" normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7/MainView.o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/MainView.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7/SoundView.o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/SoundView.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7/main.o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/main.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
 CCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/AppDelegate.o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/AppDelegate.m" normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386989161.605766
-e386989162.208518
+s387019844.698557
+e387019844.950382
 r1
 xCompileC
 xDerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/AppDelegate.o
@@ -809,7 +1209,7 @@ xnormal
 xarmv7s
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/AppDelegate.m79e8c769fc10b741^2060356afc10b741^---0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/AppDelegate.m0000000000000000^4081"CompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/AppDelegate.o Homester/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap" -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester" -include "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-ftibzumuhyenmygpccypcdayxsmz/Homester-Prefix.pch" -MMD -MT dependencies -MF "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/AppDelegate.d" --serialize-diagnostics "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/AppDelegate.dia" -c "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/AppDelegate.m" -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/AppDelegate.o"36"2C98ADE6-086F-4577-AA86-0CAF3D55BF34-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/AppDelegate.mb41db3447411b741^664af3447411b741^---0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/AppDelegate.m0000000000000000^4163"CompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/AppDelegate.o Homester/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap" -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework" -include "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-gsbnpjpqkccoppghtnlnpzjojish/Homester-Prefix.pch" -MMD -MT dependencies -MF "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/AppDelegate.d" --serialize-diagnostics "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/AppDelegate.dia" -c "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/AppDelegate.m" -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/AppDelegate.o"36"9D65935C-5014-4EB9-9B4C-74BE53E364B3-
 
 CCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/AppDelegate.o /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s386986470.168107
@@ -825,8 +1225,8 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/AppDelegate.m363e2be6f110b741^8675bfe6f110b741^---0#0#0#-19%DVTDocumentLocation2@86"file://localhost/Users/siddhantdanger/Dropbox/Homester/Homester/Homester/AppDelegate.m0000000000000000^3886"CompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/AppDelegate.o Homester/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/siddhantdanger/Dropbox/Homester/Homester    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap -iquote /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources -F/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos -F/Users/siddhantdanger/Dropbox/Homester/Homester -include /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-garduevfihavlpcmlwzmhvdxelfn/Homester-Prefix.pch -MMD -MT dependencies -MF /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/AppDelegate.d --serialize-diagnostics /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/AppDelegate.dia -c /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/AppDelegate.m -o /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/AppDelegate.o36"4DB21DD4-E8F6-4A4C-B52E-69BE49FA42BE-
 
 CCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/CamView.o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.mm" normal armv7s objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-s387018083.434532
-e387018086.848297
+s387022650.164558
+e387022651.325002
 r1
 xCompileC
 xDerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/CamView.o
@@ -835,7 +1235,7 @@ xnormal
 xarmv7s
 xobjective-c++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.mm:13:17: warning: incomplete implementation [-Wincomplete-implementation]
+o/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.mm:14:17: warning: incomplete implementation [-Wincomplete-implementation]
 o@implementation CamView
 o                ^
 o/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.h:28:1: note: method definition for 'updateOrientation' not found
@@ -845,7 +1245,7 @@ o/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.h:2
 o- (void)layoutPreviewLayer;
 o^
 o1 warning generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.mm6b646f636d11b741^e527d9666d11b741^-558"/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.mm:13:17: warning: incomplete implementation [-Wincomplete-implementation]@implementation CamView                ^/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.h:28:1: note: method definition for 'updateOrientation' not found- (void)updateOrientation;^/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.h:29:1: note: method definition for 'layoutPreviewLayer' not found- (void)layoutPreviewLayer;^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@25"Incomplete implementation-387018086#18446744073709551615#0#2(2@51"Method definition for 'updateOrientation' not found-387018086#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@95"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/CamView.h0000000000000000^27#0#27#0#656#0#14"Semantic Issue--2@52"Method definition for 'layoutPreviewLayer' not found-387018086#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@95"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/CamView.h0000000000000000^28#0#28#0#683#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@96"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/CamView.mm0000000000000000^12#16#12#16#226#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation4@96"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/CamView.mm0000000000000000^4207"CompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/CamView.o Homester/CamView.mm normal armv7s objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7s -fmessage-length=0 -std=gnu++11 -stdlib=libc++ -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap" -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester" -include "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-eehegkkbjxhttkhjfkabqjxpxjwm/Homester-Prefix.pch" -MMD -MT dependencies -MF "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/CamView.d" --serialize-diagnostics "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/CamView.dia" -c "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.mm" -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/CamView.o"36"C8BF3DCF-ECD5-4E45-A41D-92721B536CE0-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.mm8e592a3a7f11b741^2b31533b7f11b741^-558"/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.mm:14:17: warning: incomplete implementation [-Wincomplete-implementation]@implementation CamView                ^/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.h:28:1: note: method definition for 'updateOrientation' not found- (void)updateOrientation;^/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.h:29:1: note: method definition for 'layoutPreviewLayer' not found- (void)layoutPreviewLayer;^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@25"Incomplete implementation-387022651#18446744073709551615#0#2(2@51"Method definition for 'updateOrientation' not found-387022651#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@95"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/CamView.h0000000000000000^27#0#27#0#656#0#14"Semantic Issue--2@52"Method definition for 'layoutPreviewLayer' not found-387022651#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@95"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/CamView.h0000000000000000^28#0#28#0#683#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@96"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/CamView.mm0000000000000000^13#16#13#16#243#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation4@96"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/CamView.mm0000000000000000^4289"CompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/CamView.o Homester/CamView.mm normal armv7s objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7s -fmessage-length=0 -std=gnu++11 -stdlib=libc++ -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap" -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework" -include "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-daregoalgmggageeyxmoqxbdpqsx/Homester-Prefix.pch" -MMD -MT dependencies -MF "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/CamView.d" --serialize-diagnostics "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/CamView.dia" -c "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/CamView.mm" -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/CamView.o"36"5EE58DFC-279E-4C63-8BB5-CE4E3ED4093E-
 
 CCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/CamView.o /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/CamView.mm normal armv7s objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
 s386986478.451954
@@ -871,8 +1271,8 @@ o1 warning generated.
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/CamView.mmc7da73eef110b741^29d0c3eff110b741^-525"/Users/siddhantdanger/Dropbox/Homester/Homester/Homester/CamView.mm:13:17: warning: incomplete implementation [-Wincomplete-implementation]@implementation CamView                ^/Users/siddhantdanger/Dropbox/Homester/Homester/Homester/CamView.h:25:1: note: method definition for 'updateOrientation' not found- (void)updateOrientation;^/Users/siddhantdanger/Dropbox/Homester/Homester/Homester/CamView.h:26:1: note: method definition for 'layoutPreviewLayer' not found- (void)layoutPreviewLayer;^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@25"Incomplete implementation-386986479#18446744073709551615#0#2(2@51"Method definition for 'updateOrientation' not found-386986479#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@82"file://localhost/Users/siddhantdanger/Dropbox/Homester/Homester/Homester/CamView.h0000000000000000^24#0#24#0#524#0#14"Semantic Issue--2@52"Method definition for 'layoutPreviewLayer' not found-386986479#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/siddhantdanger/Dropbox/Homester/Homester/Homester/CamView.h0000000000000000^25#0#25#0#551#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@83"file://localhost/Users/siddhantdanger/Dropbox/Homester/Homester/Homester/CamView.mm0000000000000000^12#16#12#16#226#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation4@83"file://localhost/Users/siddhantdanger/Dropbox/Homester/Homester/Homester/CamView.mm0000000000000000^4012"CompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/CamView.o Homester/CamView.mm normal armv7s objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/siddhantdanger/Dropbox/Homester/Homester    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7s -fmessage-length=0 -std=gnu++11 -stdlib=libc++ -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap -iquote /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources -F/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos -F/Users/siddhantdanger/Dropbox/Homester/Homester -include /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-cmsdyeurpglogcbvgwfiictuddff/Homester-Prefix.pch -MMD -MT dependencies -MF /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/CamView.d --serialize-diagnostics /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/CamView.dia -c /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/CamView.mm -o /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/CamView.o36"FE3C5EE0-2828-4A57-BD06-0A216CDFA59F-
 
 CCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/MainView.o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/MainView.m" normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386989162.667081
-e386989163.194662
+s387019844.698539
+e387019845.313046
 r1
 xCompileC
 xDerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/MainView.o
@@ -881,7 +1281,7 @@ xnormal
 xarmv7s
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/MainView.m67edaa6afc10b741^fed3316bfc10b741^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/MainView.m0000000000000000^4063"CompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/MainView.o Homester/MainView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap" -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester" -include "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-ftibzumuhyenmygpccypcdayxsmz/Homester-Prefix.pch" -MMD -MT dependencies -MF "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/MainView.d" --serialize-diagnostics "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/MainView.dia" -c "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/MainView.m" -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/MainView.o"36"4CD5CD52-49D4-4AB5-8C84-FCF7CE574B40-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/MainView.m6614b3447411b741^362250457411b741^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/MainView.m0000000000000000^4145"CompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/MainView.o Homester/MainView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap" -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework" -include "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-gsbnpjpqkccoppghtnlnpzjojish/Homester-Prefix.pch" -MMD -MT dependencies -MF "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/MainView.d" --serialize-diagnostics "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/MainView.dia" -c "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/MainView.m" -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/MainView.o"36"A55EE5E5-53E2-4C19-8745-641EB0489123-
 
 CCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/MainView.o /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/MainView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s386986470.168495
@@ -897,8 +1297,8 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/MainView.m965a2be6f110b741^af77bfe6f110b741^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/siddhantdanger/Dropbox/Homester/Homester/Homester/MainView.m0000000000000000^3868"CompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/MainView.o Homester/MainView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/siddhantdanger/Dropbox/Homester/Homester    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap -iquote /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources -F/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos -F/Users/siddhantdanger/Dropbox/Homester/Homester -include /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-garduevfihavlpcmlwzmhvdxelfn/Homester-Prefix.pch -MMD -MT dependencies -MF /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/MainView.d --serialize-diagnostics /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/MainView.dia -c /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/MainView.m -o /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/MainView.o36"4B95F479-561B-41F1-BA9C-3BC88BD9ED5D-
 
 CCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/SoundView.o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/SoundView.m" normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386989161.605762
-e386989162.665702
+s387019844.883678
+e387019845.436851
 r1
 xCompileC
 xDerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/SoundView.o
@@ -907,7 +1307,20 @@ xnormal
 xarmv7s
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/SoundView.mdee8c769fc10b741^2769aa6afc10b741^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/SoundView.m0000000000000000^4069"CompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/SoundView.o Homester/SoundView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap" -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester" -include "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-ftibzumuhyenmygpccypcdayxsmz/Homester-Prefix.pch" -MMD -MT dependencies -MF "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/SoundView.d" --serialize-diagnostics "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/SoundView.dia" -c "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/SoundView.m" -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/SoundView.o"36"DEF4CFEA-7740-41F4-B3C1-E492F7B91DA4-
+o/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/SoundView.m:105:18: warning: capturing 'self' strongly in this block is likely to lead to a retain cycle [-Warc-retain-cycles]
+o                 output = @"Uh oh! We weren't able to post.";
+o                 ^~~~~~
+o/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/SoundView.m:101:6: note: block will be retained by an object strongly retained by the captured object
+o    [myslcomposersheet setCompletionHandler:^
+o     ^~~~~~~~~~~~~~~~~
+o/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/SoundView.m:213:35: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o                            NSLog(numberString);
+o                                  ^~~~~~~~~~~~
+o/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/SoundView.m:235:15: warning: unused variable 'phonenum' [-Wunused-variable]
+o    NSString *phonenum = lastTweetTextView.text;
+o              ^
+o3 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/SoundView.ma75be2447411b741^4ed36f457411b741^-1025"/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/SoundView.m:105:18: warning: capturing 'self' strongly in this block is likely to lead to a retain cycle [-Warc-retain-cycles]                 output = @"Uh oh! We weren't able to post.";                 ^~~~~~/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/SoundView.m:101:6: note: block will be retained by an object strongly retained by the captured object    [myslcomposersheet setCompletionHandler:^     ^~~~~~~~~~~~~~~~~/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/SoundView.m:213:35: warning: format string is not a string literal (potentially insecure) [-Wformat-security]                            NSLog(numberString);                                  ^~~~~~~~~~~~/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/SoundView.m:235:15: warning: unused variable 'phonenum' [-Wunused-variable]    NSString *phonenum = lastTweetTextView.text;              ^3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@75"Capturing 'self' strongly in this block is likely to lead to a retain cycle-387019845#18446744073709551615#0#1(2@76"Block will be retained by an object strongly retained by the captured object-387019845#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@97"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/SoundView.m0000000000000000^100#5#100#5#3361#0#16"ARC Retain Cycle1(3@97"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/SoundView.m0000000000000000^100#5#100#22#3361#0#-1#27"com.apple.dt.IDE.diagnostic3@97"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/SoundView.m0000000000000000^104#17#104#17#3550#0#16"ARC Retain Cycle1(3@97"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/SoundView.m0000000000000000^104#17#104#23#3550#0#-2@60"Format string is not a string literal (potentially insecure)-387019845#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@97"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/SoundView.m0000000000000000^212#34#212#34#7968#0#19"Format String Issue1(3@97"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/SoundView.m0000000000000000^212#34#212#46#7968#0#-2@26"Unused variable 'phonenum'-387019845#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@97"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/SoundView.m0000000000000000^234#14#234#14#8613#0#19"Unused Entity Issue--0#0#0#-19%DVTDocumentLocation4@97"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/SoundView.m0000000000000000^4151"CompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/SoundView.o Homester/SoundView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap" -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework" -include "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-gsbnpjpqkccoppghtnlnpzjojish/Homester-Prefix.pch" -MMD -MT dependencies -MF "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/SoundView.d" --serialize-diagnostics "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/SoundView.dia" -c "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/SoundView.m" -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/SoundView.o"36"247E12B5-4DD7-494A-B91D-08EC9C99BDA3-
 
 CCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/SoundView.o /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/SoundView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s386987512.248854
@@ -923,8 +1336,8 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/SoundView.m7ae03ff8f510b741^f67bcefaf510b741^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/siddhantdanger/Dropbox/Homester/Homester/Homester/SoundView.m0000000000000000^3874"CompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/SoundView.o Homester/SoundView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/siddhantdanger/Dropbox/Homester/Homester    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap -iquote /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources -F/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos -F/Users/siddhantdanger/Dropbox/Homester/Homester -include /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-garduevfihavlpcmlwzmhvdxelfn/Homester-Prefix.pch -MMD -MT dependencies -MF /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/SoundView.d --serialize-diagnostics /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/SoundView.dia -c /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/SoundView.m -o /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/SoundView.o36"F87FE388-1F18-4A5C-83A9-55054A44EC62-
 
 CCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/main.o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/main.m" normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s386989161.605776
-e386989162.205969
+s387019844.698007
+e387019844.882359
 r1
 xCompileC
 xDerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/main.o
@@ -933,7 +1346,7 @@ xnormal
 xarmv7s
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/main.m70eac769fc10b741^3acf346afc10b741^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/main.m0000000000000000^4039"CompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/main.o Homester/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap" -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester" -include "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-ftibzumuhyenmygpccypcdayxsmz/Homester-Prefix.pch" -MMD -MT dependencies -MF "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/main.d" --serialize-diagnostics "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/main.dia" -c "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/main.m" -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/main.o"36"2BB74EFB-D86E-478A-85BE-31D3FA0E1660-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/main.mf8feb2447411b741^1ae1e1447411b741^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/main.m0000000000000000^4121"CompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/main.o Homester/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap" -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework" -include "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-gsbnpjpqkccoppghtnlnpzjojish/Homester-Prefix.pch" -MMD -MT dependencies -MF "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/main.d" --serialize-diagnostics "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/main.dia" -c "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/main.m" -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/main.o"36"2BC4943F-E579-4D76-AAF5-ED2BF8CB09D0-
 
 CCompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/main.o /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s386986470.167545
@@ -949,13 +1362,13 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/main.mbf0b2be6f110b741^2a6fbfe6f110b741^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/siddhantdanger/Dropbox/Homester/Homester/Homester/main.m0000000000000000^3844"CompileC DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/main.o Homester/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/siddhantdanger/Dropbox/Homester/Homester    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap -iquote /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s -I/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources -F/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos -F/Users/siddhantdanger/Dropbox/Homester/Homester -include /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-garduevfihavlpcmlwzmhvdxelfn/Homester-Prefix.pch -MMD -MT dependencies -MF /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/main.d --serialize-diagnostics /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/main.dia -c /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/main.m -o /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/main.o36"BD98437C-9C39-4EC2-85AA-DC20A4816D46-
 
 CCompileStoryboard "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/en.lproj/MainStoryboard.storyboard"
-s387018169.692990
-e387018175.452470
+s387019851.603212
+e387019862.096724
 r1
 xCompileStoryboard
 x/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/en.lproj/MainStoryboard.storyboard
-o2013-04-07 02:02:53.214 Interface Builder Cocoa Touch Tool[80283:14603] CFPreferences: user home directory at file://localhost/Users/siddhantdanger/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"CompileStoryboard Homester/en.lproj/MainStoryboard.storyboarde484b1b96d11b741^fed573bf6d11b741^-249"2013-04-07 02:02:53.214 Interface Builder Cocoa Touch Tool[80283:14603] CFPreferences: user home directory at file://localhost/Users/siddhantdanger/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/en.lproj/MainStoryboard.storyboard0000000000000000^970"CompileStoryboard Homester/en.lproj/MainStoryboard.storyboard    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/en.lproj/MainStoryboard.storyboardc" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/en.lproj/MainStoryboard.storyboard" --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk36"1AD75552-5477-45AB-8BDA-74214363E50D-
+o2013-04-07 02:31:00.112 Interface Builder Cocoa Touch Tool[80785:14603] CFPreferences: user home directory at file://localhost/Users/siddhantdanger/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"CompileStoryboard Homester/en.lproj/MainStoryboard.storyboard90879a4b7411b741^86e818567411b741^-249"2013-04-07 02:31:00.112 Interface Builder Cocoa Touch Tool[80785:14603] CFPreferences: user home directory at file://localhost/Users/siddhantdanger/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/en.lproj/MainStoryboard.storyboard0000000000000000^970"CompileStoryboard Homester/en.lproj/MainStoryboard.storyboard    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/en.lproj/MainStoryboard.storyboardc" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/en.lproj/MainStoryboard.storyboard" --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk36"21EA05E5-A580-414A-A21E-B276A1049933-
 
 CCompileStoryboard /Users/siddhantdanger/Dropbox/Homester/Homester/Homester/en.lproj/MainStoryboard.storyboard
 s386987517.589019
@@ -1023,14 +1436,131 @@ x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Develope
 xDerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/ResourceRules.plist
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Copy DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/ResourceRules.plist6a4b31e0f110b741^569945e0f110b741^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/ResourceRules.plist000000000080d041^806"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/ResourceRules.plist    cd /Users/siddhantdanger/Dropbox/Homester/Homester    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app36"2378A38F-6F30-4A6A-A4C8-718E6A429027-
 
+CCpResource Homester/Framework/OpenEars1.dic DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.dic
+s387019852.780738
+e387019852.820321
+r1
+xCpResource
+xHomester/Framework/OpenEars1.dic
+xDerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.dic
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Copy DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.dicc808c84c7411b741^7e00d24c7411b741^---0#0#0#-19%DVTDocumentLocation2@154"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.dic000000000080d041^709"CpResource Homester/Framework/OpenEars1.dic DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.dic    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars1.dic" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"36"5F8F335D-3B5A-4F6F-9425-EF2409A39AB5-
+
+CCpResource Homester/Framework/OpenEars1.gram DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.gram
+s387019852.793395
+e387019852.923207
+r1
+xCpResource
+xHomester/Framework/OpenEars1.gram
+xDerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.gram
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Copy DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.gram5936cb4c7411b741^0e69ec4c7411b741^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.gram000000000080d041^712"CpResource Homester/Framework/OpenEars1.gram DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.gram    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars1.gram" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"36"DE364CE3-911C-456E-8130-9ECA76D36509-
+
+CCpResource Homester/Framework/OpenEars1.languagemodel DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.languagemodel
+s387019852.821635
+e387019852.923119
+r1
+xCpResource
+xHomester/Framework/OpenEars1.languagemodel
+xDerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.languagemodel
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Copy DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.languagemodel2671d24c7411b741^4b57ec4c7411b741^---0#0#0#-19%DVTDocumentLocation2@164"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.languagemodel000000000080d041^739"CpResource Homester/Framework/OpenEars1.languagemodel DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars1.languagemodel    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars1.languagemodel" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"36"125E7C97-3D00-4F5F-8D81-A832762ADDDB-
+
+CCpResource Homester/Framework/OpenEars2.gram DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars2.gram
+s387019852.924535
+e387019852.968941
+r1
+xCpResource
+xHomester/Framework/OpenEars2.gram
+xDerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars2.gram
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Copy DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars2.gram9ad0ec4c7411b741^9d0ef84c7411b741^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars2.gram000000000080d041^712"CpResource Homester/Framework/OpenEars2.gram DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEars2.gram    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEars2.gram" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"36"145202CD-D6AC-4D34-B496-22B51E91309B-
+
+CCpResource Homester/Framework/OpenEarsCorpus.txt DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEarsCorpus.txt
+s387019852.924545
+e387019852.968994
+r1
+xCpResource
+xHomester/Framework/OpenEarsCorpus.txt
+xDerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEarsCorpus.txt
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Copy DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEarsCorpus.txt51ddec4c7411b741^9f1df84c7411b741^---0#0#0#-19%DVTDocumentLocation2@159"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEarsCorpus.txt000000000080d041^724"CpResource Homester/Framework/OpenEarsCorpus.txt DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/OpenEarsCorpus.txt    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/OpenEarsCorpus.txt" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"36"93B164BE-6B5C-4A91-8C29-1690C53DC863-
+
+CCpResource Homester/Framework/cmu07a.dic DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/cmu07a.dic
+s387019851.603865
+e387019852.779173
+r1
+xCpResource
+xHomester/Framework/cmu07a.dic
+xDerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/cmu07a.dic
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Copy DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/cmu07a.dic7aab9a4b7411b741^2e91c74c7411b741^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/cmu07a.dic000000000080d041^700"CpResource Homester/Framework/cmu07a.dic DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/cmu07a.dic    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/cmu07a.dic" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"36"4A374AF5-5831-4C5B-8D90-28FF7D24E807-
+
+CCpResource Homester/Framework/hub4wsj_sc_8k/feat.params DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/feat.params
+s387019851.603897
+e387019851.666492
+r1
+xCpResource
+xHomester/Framework/hub4wsj_sc_8k/feat.params
+xDerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/feat.params
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Copy DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/feat.params25af9a4b7411b741^5ea2aa4b7411b741^---0#0#0#-19%DVTDocumentLocation2@152"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/feat.params000000000080d041^731"CpResource Homester/Framework/hub4wsj_sc_8k/feat.params DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/feat.params    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/hub4wsj_sc_8k/feat.params" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"36"8E7A01A9-D87B-4E3F-80B7-B2CFD79D8C15-
+
+CCpResource Homester/Framework/hub4wsj_sc_8k/mdef DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/mdef
+s387019851.604976
+e387019852.780057
+r1
+xCpResource
+xHomester/Framework/hub4wsj_sc_8k/mdef
+xDerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/mdef
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Copy DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/mdef23f99a4b7411b741^07b5c74c7411b741^---0#0#0#-19%DVTDocumentLocation2@145"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/mdef000000000080d041^710"CpResource Homester/Framework/hub4wsj_sc_8k/mdef DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/mdef    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/hub4wsj_sc_8k/mdef" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"36"2156E67E-9723-4AC5-BAE6-6E9AB688FF9A-
+
+CCpResource Homester/Framework/hub4wsj_sc_8k/means DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/means
+s387019851.668160
+e387019851.788486
+r1
+xCpResource
+xHomester/Framework/hub4wsj_sc_8k/means
+xDerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/means
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Copy DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/means5936ab4b7411b741^c2ddc94b7411b741^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/means000000000080d041^713"CpResource Homester/Framework/hub4wsj_sc_8k/means DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/means    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/hub4wsj_sc_8k/means" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"36"8F573381-C9E3-4C39-8612-D02A4E289B41-
+
+CCpResource Homester/Framework/hub4wsj_sc_8k/noisedict DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/noisedict
+s387019851.789884
+e387019851.826044
+r1
+xCpResource
+xHomester/Framework/hub4wsj_sc_8k/noisedict
+xDerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/noisedict
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Copy DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/noisedict9753ca4b7411b741^f277d34b7411b741^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/noisedict000000000080d041^725"CpResource Homester/Framework/hub4wsj_sc_8k/noisedict DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/noisedict    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/hub4wsj_sc_8k/noisedict" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"36"F18AE93A-2EEA-48DB-9BFC-AD5527583383-
+
+CCpResource Homester/Framework/hub4wsj_sc_8k/sendump DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/sendump
+s387019851.827575
+e387019852.779514
+r1
+xCpResource
+xHomester/Framework/hub4wsj_sc_8k/sendump
+xDerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/sendump
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Copy DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/sendumpc409d44b7411b741^b29dc74c7411b741^---0#0#0#-19%DVTDocumentLocation2@148"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/sendump000000000080d041^719"CpResource Homester/Framework/hub4wsj_sc_8k/sendump DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/sendump    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/hub4wsj_sc_8k/sendump" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"36"895F6578-6DD8-4904-A23E-4DBCCD17DD1C-
+
+CCpResource Homester/Framework/hub4wsj_sc_8k/transition_matrices DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/transition_matrices
+s387019852.780590
+e387019852.792087
+r1
+xCpResource
+xHomester/Framework/hub4wsj_sc_8k/transition_matrices
+xDerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/transition_matrices
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Copy DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/transition_matricesd106c84c7411b741^d8d3ca4c7411b741^---0#0#0#-19%DVTDocumentLocation2@160"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/transition_matrices000000000080d041^755"CpResource Homester/Framework/hub4wsj_sc_8k/transition_matrices DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/transition_matrices    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/hub4wsj_sc_8k/transition_matrices" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"36"F841C8C3-0726-4C0A-9255-C82E9EAFC1F4-
+
+CCpResource Homester/Framework/hub4wsj_sc_8k/variances DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/variances
+s387019852.780601
+e387019852.923170
+r1
+xCpResource
+xHomester/Framework/hub4wsj_sc_8k/variances
+xDerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/variances
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Copy DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/variances1806c84c7411b741^9162ec4c7411b741^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/variances000000000080d041^725"CpResource Homester/Framework/hub4wsj_sc_8k/variances DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/variances    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework/hub4wsj_sc_8k/variances" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"36"F3131F4F-424E-46F5-8ABC-8D31B11A9AB7-
+
 CGenerateDSYMFile "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app.dSYM" "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester"
-s387018105.513074
-e387018105.626549
+s387022652.004335
+e387022652.634190
 r1
 xGenerateDSYMFile
 x/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app.dSYM
 x/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection136"Generate /Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app.dSYMf06c83796d11b741^bf63a0796d11b741^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app.dSYM/0000000000000000^782"GenerateDSYMFile DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app.dSYM DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester" -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app.dSYM"36"FFE88FC0-9419-49D6-BC3F-451E707E63C4-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection136"Generate /Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app.dSYM4d2f013c7f11b741^c558a23c7f11b741^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app.dSYM/0000000000000000^782"GenerateDSYMFile DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app.dSYM DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester" -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app.dSYM"36"958729E2-C469-4145-A056-CA4BB620ED33-
 
 CGenerateDSYMFile /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app.dSYM /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester
 s386987600.863473
@@ -1041,15 +1571,18 @@ x/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Prod
 x/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"Generate /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app.dSYM9626dd50f610b741^f7e97452f610b741^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app.dSYM/0000000000000000^743"GenerateDSYMFile DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app.dSYM DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester    cd /Users/siddhantdanger/Dropbox/Homester/Homester    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester -o /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app.dSYM36"E70D4219-8F28-4251-A1A4-57BAC9FCF167-
 
+CLd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester" normal armv7
+r0
+
 CLd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester" normal armv7s
-s387018086.857323
-e387018090.004712
+s387022651.332864
+e387022651.996570
 r1
 xLd
 x/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester
 xnormal
 xarmv7s
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection136"Link /Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester5793db666d11b741^2a37016a6d11b741^---0#0#0#--1608"Ld DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester normal armv7s    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch armv7s -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk "-L/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester" -filelist "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/Homester.LinkFileList" -dead_strip -fobjc-arc -fobjc-link-runtime -stdlib=libc++ -miphoneos-version-min=6.1 -lc++ -framework Accounts -framework Accelerate -framework AssetsLibrary -framework AVFoundation -framework CoreImage -framework CoreMedia -framework CoreVideo -framework QuartzCore -framework Social -framework CoreGraphics -framework Foundation -framework UIKit -framework opencv2 -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester"36"0D4414E8-AF26-4E99-A63D-CB0976C28C56-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection136"Link /Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester3354553b7f11b741^e21eff3b7f11b741^---0#0#0#--1749"Ld DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester normal armv7s    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch armv7s -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk "-L/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework" -filelist "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Objects-normal/armv7s/Homester.LinkFileList" -dead_strip -fobjc-arc -fobjc-link-runtime -stdlib=libc++ -miphoneos-version-min=6.1 -framework AVFoundation -framework AudioToolbox -lc++ -framework Accounts -framework Accelerate -framework AssetsLibrary -framework CoreImage -framework CoreMedia -framework CoreVideo -framework QuartzCore -framework Social -framework CoreGraphics -framework Foundation -framework UIKit -framework opencv2 -framework OpenEars -framework Slt -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester"36"07B6A36B-1B85-421B-8BF1-7AF098475948-
 
 CLd /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Homester normal armv7s
 s386987514.813576
@@ -1073,6 +1606,9 @@ x/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Prod
 xHomester/Homester-Info.plist
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Process Homester/Homester-Info.plistad4b31e0f110b741^849e45e0f110b741^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/siddhantdanger/Dropbox/Homester/Homester/Homester/Homester-Info.plist0000000000000000^890"ProcessInfoPlistFile DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Info.plist Homester/Homester-Info.plist    cd /Users/siddhantdanger/Dropbox/Homester/Homester    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Homester/Homester-Info.plist -genpkginfo /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/ResourceRules.plist -o /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app/Info.plist36"2DAC8C48-2C08-4A38-A963-E9D28D012F76-
 
+CProcessPCH "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-amlmekaiptlffgeyjbzvhzfoydnl/Homester-Prefix.pch.pth" Homester/Homester-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
 CProcessPCH "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-ftibzumuhyenmygpccypcdayxsmz/Homester-Prefix.pch.pth" Homester/Homester-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s386989158.012262
 e386989161.598651
@@ -1086,7 +1622,26 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile Homester/Homester-Prefix.pch6e4c0366fc10b741^2db3c869fc10b741^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/Homester-Prefix.pch0000000000000000^3931"ProcessPCH DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-ftibzumuhyenmygpccypcdayxsmz/Homester-Prefix.pch.pth Homester/Homester-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap" -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester" --serialize-diagnostics "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-ftibzumuhyenmygpccypcdayxsmz/Homester-Prefix.pch.dia" -c "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Homester-Prefix.pch" -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-ftibzumuhyenmygpccypcdayxsmz/Homester-Prefix.pch.pth" -MMD -MT dependencies -MF "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-ftibzumuhyenmygpccypcdayxsmz/Homester-Prefix.pch.d"36"86DC62C4-8E92-4A9B-BDF6-D06E5FA0DE63-
 
+CProcessPCH "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-gsbnpjpqkccoppghtnlnpzjojish/Homester-Prefix.pch.pth" Homester/Homester-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387019843.167239
+e387019844.691070
+r1
+xProcessPCH
+x/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-gsbnpjpqkccoppghtnlnpzjojish/Homester-Prefix.pch.pth
+xHomester/Homester-Prefix.pch
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile Homester/Homester-Prefix.pchb9fd2a437411b741^afeab0447411b741^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/Homester-Prefix.pch0000000000000000^4013"ProcessPCH DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-gsbnpjpqkccoppghtnlnpzjojish/Homester-Prefix.pch.pth Homester/Homester-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap" -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework" --serialize-diagnostics "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-gsbnpjpqkccoppghtnlnpzjojish/Homester-Prefix.pch.dia" -c "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Homester-Prefix.pch" -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-gsbnpjpqkccoppghtnlnpzjojish/Homester-Prefix.pch.pth" -MMD -MT dependencies -MF "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-gsbnpjpqkccoppghtnlnpzjojish/Homester-Prefix.pch.d"36"E7B0AA8B-CA3C-4108-9B86-CE33A426EEA1-
+
 CProcessPCH "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Index/PrecompiledHeaders/Homester-Prefix-btqaihcmiaboprhfqvudqzhgzlvj_ast/Homester-Prefix.pch.pth" Homester/Homester-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Index/PrecompiledHeaders/Homester-Prefix-eixbnvvnbbcxqaajaikivesqgail_ast/Homester-Prefix.pch.pth" Homester/Homester-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Index/PrecompiledHeaders/Homester-Prefix-gmkfcrueaskpnggjgfnmdzrvzefq_ast/Homester-Prefix.pch.pth" Homester/Homester-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
 CProcessPCH /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-garduevfihavlpcmlwzmhvdxelfn/Homester-Prefix.pch.pth Homester/Homester-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -1105,6 +1660,19 @@ lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precomp
 CProcessPCH /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Index/PrecompiledHeaders/Homester-Prefix-bbjyjcgghaienjgujmdcamltzmom_ast/Homester-Prefix.pch.pth Homester/Homester-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
+CProcessPCH++ "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-daregoalgmggageeyxmoqxbdpqsx/Homester-Prefix.pch.pth" Homester/Homester-Prefix.pch normal armv7s objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s387019843.167242
+e387019846.755846
+r1
+xProcessPCH++
+x/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-daregoalgmggageeyxmoqxbdpqsx/Homester-Prefix.pch.pth
+xHomester/Homester-Prefix.pch
+xnormal
+xarmv7s
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile Homester/Homester-Prefix.pch87fd2a437411b741^b77fc1467411b741^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/Homester-Prefix.pch0000000000000000^4163"ProcessPCH++ DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-daregoalgmggageeyxmoqxbdpqsx/Homester-Prefix.pch.pth Homester/Homester-Prefix.pch normal armv7s objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++-header -arch armv7s -fmessage-length=0 -std=gnu++11 -stdlib=libc++ -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap" -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Framework" --serialize-diagnostics "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-daregoalgmggageeyxmoqxbdpqsx/Homester-Prefix.pch.dia" -c "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Homester-Prefix.pch" -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-daregoalgmggageeyxmoqxbdpqsx/Homester-Prefix.pch.pth" -MMD -MT dependencies -MF "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-daregoalgmggageeyxmoqxbdpqsx/Homester-Prefix.pch.d"36"D91EF0B7-7D43-43F8-B31D-53E474483F42-
+
 CProcessPCH++ "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-eehegkkbjxhttkhjfkabqjxpxjwm/Homester-Prefix.pch.pth" Homester/Homester-Prefix.pch normal armv7s objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
 s386989158.012284
 e386989172.553751
@@ -1118,7 +1686,16 @@ xobjective-c++
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile Homester/Homester-Prefix.pch904c0366fc10b741^13d78d74fc10b741^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/siddhantdanger/Projects/App%20Stuff/watch4me/Homester/Homester/Homester-Prefix.pch0000000000000000^4081"ProcessPCH++ DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-eehegkkbjxhttkhjfkabqjxpxjwm/Homester-Prefix.pch.pth Homester/Homester-Prefix.pch normal armv7s objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++-header -arch armv7s -fmessage-length=0 -std=gnu++11 -stdlib=libc++ -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-generated-files.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-own-target-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-all-target-headers.hmap" -iquote "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester-project-headers.hmap" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources/armv7s" "-I/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/DerivedSources" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos" "-F/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester" --serialize-diagnostics "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-eehegkkbjxhttkhjfkabqjxpxjwm/Homester-Prefix.pch.dia" -c "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/Homester/Homester-Prefix.pch" -o "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-eehegkkbjxhttkhjfkabqjxpxjwm/Homester-Prefix.pch.pth" -MMD -MT dependencies -MF "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-eehegkkbjxhttkhjfkabqjxpxjwm/Homester-Prefix.pch.d"36"FC202ADB-421D-40C5-9066-39305B9049F3-
 
+CProcessPCH++ "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-hirizoepbmfmyicqiiherdnasoor/Homester-Prefix.pch.pth" Homester/Homester-Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH++ "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Index/PrecompiledHeaders/Homester-Prefix-awbvzcmtonmkoadunjlukjblatvb_ast/Homester-Prefix.pch.pth" Homester/Homester-Prefix.pch normal armv7s objective-c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
 CProcessPCH++ "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Index/PrecompiledHeaders/Homester-Prefix-efbkppbnmhmkepfzbjynjnkvknml_ast/Homester-Prefix.pch.pth" Homester/Homester-Prefix.pch normal armv7s objective-c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Index/PrecompiledHeaders/Homester-Prefix-fwqgfjrthzjsibevdkdnfycjasuc_ast/Homester-Prefix.pch.pth" Homester/Homester-Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
 CProcessPCH++ /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/PrecompiledHeaders/Homester-Prefix-cmsdyeurpglogcbvgwfiictuddff/Homester-Prefix.pch.pth Homester/Homester-Prefix.pch normal armv7s objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
@@ -1162,12 +1739,12 @@ x/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Inte
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection245"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester.xcent3e596503f210b741^69376603f210b741^---0#0#0#-19%DVTDocumentLocation2@164"file://localhost/Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester.xcent000000000080d041^824"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester.xcent    cd /Users/siddhantdanger/Dropbox/Homester/Homester    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Intermediates/Homester.build/Debug-iphoneos/Homester.build/Homester.xcent36"D1948791-02F5-4B0C-8B4E-66CA050694FE-
 
 CTouch "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"
-s387018175.477399
-e387018175.552965
+s387022652.672612
+e387022652.725718
 r1
 xTouch
 x/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Touch /Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app344b7abf6d11b741^19c58ebf6d11b741^---0#0#0#--473"Touch DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"36"ED8A24E3-0FFB-4D90-865E-5D11A30E65EE-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Touch /Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.appb742ac3c7f11b741^e2cab93c7f11b741^---0#0#0#--473"Touch DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app    cd "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/siddhantdanger/Projects/App Stuff/watch4me/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app"36"E0FADCD4-ACF6-4F15-8E54-65B03D5AE298-
 
 CTouch /Users/siddhantdanger/Dropbox/Homester/Homester/DerivedData/Homester/Build/Products/Debug-iphoneos/Homester.app
 s386987538.215899

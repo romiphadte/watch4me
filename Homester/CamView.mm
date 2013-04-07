@@ -71,7 +71,7 @@
     cvtColor(image, image, CV_BGR2HSV);
     
     //replace with channel
-    replaceMatWithChannel(&image, @"S", 1, 0);
+    replaceMatWithChannel(&image, @"S", 1.3, 0);
     
     //instantiate mats
     if(_meanImage == NULL || _stdDevImage == NULL){
@@ -85,7 +85,7 @@
     // std::cout << "img"<< image.type() << " alphaimg" << (ALPHA * image).type() << " meanimage" <<  _meanImage->type() << " alphameanimg" <<  (ALPHA* *_meanImage).type() << " add" <<  (ALPHA * image + (1-ALPHA) * *_meanImage).type();
     
     //adaptive background subtraction
-    float ALPHA = 0.05;
+    float ALPHA = 0.1;
     *_meanImage = ALPHA * image + (1-ALPHA) * *_meanImage;
     image -= *_meanImage;
     
@@ -100,7 +100,7 @@
         
         int indexGrestest = greatestContourArea(allCountours.size(), allCountours);
         vector<cv::Point> lContour = allCountours[indexGrestest];
-        if(contourArea(lContour) > 10000 && contourArea(lContour) < 100000){
+        if(contourArea(lContour) > 1000 && contourArea(lContour) < 100000){
             //    cout << contourArea(lContour) << endl;
             
             //draw contours
@@ -123,6 +123,7 @@
             } else{ //if nothing is moving, check if something WAS moving
                 cout << dist << endl;
                 if (_isMoving) {
+                    cout << "done moving" << endl;
                     _doneMoving = YES;
                     _isMoving = NO;
                 }

@@ -16,9 +16,33 @@
 		<data>
 		f+chbalD/cg0G6RzsOPbpHUYQAg=
 		</data>
+		<key>OpenEars1.dic</key>
+		<data>
+		SP9mFQQJp90xDGuI3epkYHt4YBU=
+		</data>
+		<key>OpenEars1.gram</key>
+		<data>
+		QnvsvdoC1hpK89/1BWqSgS+wpu8=
+		</data>
+		<key>OpenEars1.languagemodel</key>
+		<data>
+		cWSkPvF/k9ZJ27HNa0tlLQDJcCQ=
+		</data>
+		<key>OpenEars2.gram</key>
+		<data>
+		zfKLyF8xMCzDkLUCLVDFN6h9MxE=
+		</data>
+		<key>OpenEarsCorpus.txt</key>
+		<data>
+		SgSFNiqXeCg0NCHzfdnPk7XozF4=
+		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>cmu07a.dic</key>
+		<data>
+		/9M/dMxmFv5Bx/4MahPLbDl6chU=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -30,27 +54,55 @@
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/2-view-3.nib</key>
 		<data>
-		giMHtKeOoL0juMY9Q8gR7wpRKwk=
+		0cUewEzKq8q2eCZacGt/s0AV2BM=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-Tlu-al-vvO.nib</key>
 		<data>
-		1cTsNdzbbHc9bAwgEovl0mLtInc=
+		3Kk7QWoAMjhdYp9VtOyIF9Src5Y=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-hy0-zg-wm8.nib</key>
 		<data>
-		aGPxSAt/dNkhQRy13TOGFeojeIw=
+		ho0Xdg+KoCDJC2yr950lLrKZH80=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-i6y-Ld-nnw.nib</key>
 		<data>
-		g0gnS4c+HZ/ud+Sq1MeHLRSJL6w=
+		3I0X6Syq0hK+mIUM9jcQHz+LN5k=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/hy0-zg-wm8-view-KOu-aA-DDs.nib</key>
 		<data>
-		bBnIEv99FzHuc8jORVKBYla5A2Q=
+		pR/yC2Mmg4EG4s1F6xt4rcUhFxs=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/i6y-Ld-nnw-view-1Db-ec-v5l.nib</key>
 		<data>
-		A3OfdeoM8lOolXW2mcIZa6wo32w=
+		I/kum6GgVDALEoQct7LlxjNsHjs=
+		</data>
+		<key>feat.params</key>
+		<data>
+		tpU19Y/w0RcLhWbWIEntVR1tVXk=
+		</data>
+		<key>mdef</key>
+		<data>
+		8RNynmaqb1eH0NsY+rytUBs2yzs=
+		</data>
+		<key>means</key>
+		<data>
+		Cx982AjTmFEvNYZNfU9wFlXpHPw=
+		</data>
+		<key>noisedict</key>
+		<data>
+		BspECSHqGVwK5dbR52eNRD/vVRs=
+		</data>
+		<key>sendump</key>
+		<data>
+		xMi2AFV2wbRmMVJtDn9MTx+uUNM=
+		</data>
+		<key>transition_matrices</key>
+		<data>
+		8oG1T75aeBTUxwBefHnCjlSwLJk=
+		</data>
+		<key>variances</key>
+		<data>
+		wiux6cx776lWpL67+IMF7/Xb/B4=
 		</data>
 	</dict>
 	<key>rules</key>

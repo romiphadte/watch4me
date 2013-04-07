@@ -23,17 +23,25 @@ static Manager *_instance = nil;
     NSLog(@"Hi!");
 }
 
+<<<<<<< HEAD
 -(void)SiriManilli{
+=======
+-(void)SiriManilli
+{
+    NSLog(@"0");
+>>>>>>> ebc911abc0e024798a836651daebe250a8be63f4
         LanguageModelGenerator *lmGenerator = [[LanguageModelGenerator alloc] init];
+    NSLog(@"1");
     NSArray *words = [NSArray arrayWithObjects:@"OPEN", @"THE", @"DOOR", @"OPEN SESAME", @"Call Sid", @"Call Romi", nil];
     NSString *name = @"Voice Recognition";
+    NSLog(@"2");
     NSError *err = [lmGenerator generateLanguageModelFromArray:words withFilesNamed:name];
-    
     NSDictionary *languageGeneratorResults = nil;
+    NSLog(@"3");
     [self.openEarsEventsObserver setDelegate:self];
     lmPath = nil;
     dicPath = nil;
-	
+	NSLog(@"4");
     if([err code] == noErr) {
         
         languageGeneratorResults = [err userInfo];
@@ -47,19 +55,24 @@ static Manager *_instance = nil;
     [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath languageModelIsJSGF:NO];
 }
 
--(void)callsid
+-(void)callWithNumber:(NSString *)number
 {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",@"14087755468"]]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",number]]];
 }
 
--(void)authorize
+-(void)approve:(NSString *)approvetext
 {
-    [self.fliteController say:@"Awesome! Welcome home. Opening door!" withVoice:self.slt];
+    [self.fliteController say:approvetext withVoice:self.slt];
 }
 
--(void)wrong
+-(void)fail:(NSString *)denytext
 {
-    [self.fliteController say:@"Sorry wrong password bro. Try hacking something to get past me at the next hackathon." withVoice:self.slt];
+    [self.fliteController say:denytext withVoice:self.slt];
+}
+
+-(void)socialParse
+{
+    
 }
 
 -(void)callromi
@@ -69,10 +82,9 @@ static Manager *_instance = nil;
 
 
 
--(void)tweetbitch
+-(void)setTweetWithMessage:(NSString *)message
 {
-    _postText.text = @"A burgular has broken in!";
-    NSString *post = [NSString stringWithFormat:@"%@", _postText.text];
+    NSString *post = [NSString stringWithFormat:@"%@", message];
     
     if (post.length >= 141) {
         NSLog(@"Tweet won't be sent.");
@@ -96,6 +108,8 @@ static Manager *_instance = nil;
                     
                     [twitterRequest performRequestWithHandler:^(NSData* responseData, NSHTTPURLResponse* urlResponse, NSError* error) {
                         NSLog(@"%@", [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
+                        
+                        NSTimer *currentTimer = [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(socialParse) userInfo:nil repeats:YES];
                         
                     }];
                     

@@ -43,8 +43,12 @@
 
 
 -(void)sayHi;
-- (void)tweetbitch;
+- (void)setTweetWithMessage:(NSString *)message;
 - (void)SiriManilli;
+- (void)callWithNumber:(NSString *)number;
+- (void)callromi;
+- (void)approve:(NSString *)approvetext;
+- (void)fail:(NSString *)denytext;
 +(Manager*)sharedInstance;
 
 @end

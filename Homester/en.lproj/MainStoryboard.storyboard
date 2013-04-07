@@ -81,9 +81,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="check:" destination="i6y-Ld-nnw" eventType="touchUpInside" id="Nyc-Ch-wwk"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Cu-4d-TNU">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -94,9 +91,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="recognizer:" destination="i6y-Ld-nnw" eventType="touchUpInside" id="W1H-Rn-qBm"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSB-vy-1hr">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -107,9 +101,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="voice:" destination="i6y-Ld-nnw" eventType="touchUpInside" id="S1f-So-eqX"/>
-                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Intruder Alert! Here's a pic!" translatesAutoresizingMaskIntoConstraints="NO" id="ZYW-Zq-ZSI">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -144,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ax3-Ia-a3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="166" y="-175"/>
+            <point key="canvasLocation" x="30" y="-349"/>
         </scene>
         <!--Cam View-->
         <scene sceneID="BMz-ba-kgX">
@@ -195,33 +186,6 @@
             <point key="canvasLocation" x="85" y="37"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="CamView" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CamView.h"/>
-            <relationships>
-                <relationship kind="outlet" name="_imageview" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="MainView" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainView.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SoundView" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SoundView.h"/>
-            <relationships>
-                <relationship kind="action" name="check:"/>
-                <relationship kind="action" name="checktweet:"/>
-                <relationship kind="action" name="recognizer:"/>
-                <relationship kind="action" name="sharePost:"/>
-                <relationship kind="action" name="voice:"/>
-                <relationship kind="outlet" name="charCounter" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lastTweetTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="postText" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
